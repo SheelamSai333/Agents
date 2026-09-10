@@ -12,12 +12,14 @@ logger = logging.getLogger(__name__)
 
 def export_nap_report(
     reports: Dict[str, NAPFieldReport],
-    output_path: str = "nap_report.json",
+    output_path: str = "outputs/nap_report.json",
 ) -> None:
     """Write NAP report to JSON as an array of field reports."""
+    path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     data = [report.to_dict() for report in reports.values()]
 
-    Path(output_path).write_text(
+    path.write_text(
         json.dumps(data, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
@@ -33,6 +35,7 @@ def print_nap_cli_summary(
     reports: Dict[str, NAPFieldReport],
     crawled_count: int,
     duration: float,
+    output_path: str = "outputs/nap_report.json",
 ) -> None:
     """Print a formatted terminal summary of the NAP consistency check."""
     divider = "=" * 70
@@ -72,5 +75,5 @@ def print_nap_cli_summary(
         )
 
     print(sub_divider)
-    print(" Output written to: nap_report.json")
+    print(f" Output written to: {output_path}")
     print(f"{divider}\n")

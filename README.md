@@ -43,7 +43,7 @@ A production-grade, multi-capability SEO intelligence and factual consistency pl
 - **13 Deterministic SEO Rules**: Evaluates HTTP status codes, title tags, meta descriptions, robots directives, heading hierarchy ($H_1 \to H_6$), image alt text, canonical links, internal/external link integrity, mixed-content HTTPS security, social metadata (Open Graph / Twitter Cards), thin content, and HTML language declarations.
 - **Concrete Evidence Citations**: Every finding includes the offending URL, exact DOM tag excerpt, character/word count, and suggested remediation.
 - **Severity Scoring**: Findings are categorized into `critical`, `high`, `medium`, `low`, and `info` with weighted score impacts.
-- **Dual JSON Reporting**: Generates both an itemized finding list (`audit.json`) and an aggregated executive summary (`audit_summary.json`), complemented by a terminal overview table.
+- **Dual JSON Reporting**: Generates both an itemized finding list (`outputs/audit.json`) and an aggregated executive summary (`outputs/audit_summary.json`), complemented by a terminal overview table.
 
 ### Q2 — NAP Consistency Checker
 - **Page Discovery & Prioritization**: Automatically prioritizes high-value business identity pages (homepage, `/contact`, `/about`, location/store directories, headers, and footers).
@@ -60,7 +60,7 @@ A production-grade, multi-capability SEO intelligence and factual consistency pl
   - `uncertain`: Extraction relies on low-confidence heuristics (e.g. logo alt text) without corroboration.
   - `not_found`: The field was not found on any analyzed page.
 - **Source-Quality Weighted Confidence**: Calculates confidence scores based on source authority (`json_ld` 1.0 > `microdata` 0.9 > `tel_link` 0.85 > `html_text` 0.5 > `logo_alt` 0.3).
-- **Array JSON Output**: Writes findings to `nap_report.json` as a JSON array of field reports.
+- **Array JSON Output**: Writes findings to `outputs/nap_report.json` as a JSON array of field reports.
 
 ### Q3 — Grounded Website Question Answering
 - **Zero-Hallucination Retrieval**: Accepts a natural-language query and crawls discoverable website content to locate the specific page answering the question.
@@ -69,7 +69,7 @@ A production-grade, multi-capability SEO intelligence and factual consistency pl
 - **Start-URL Proximity Boost**: Prioritizes the user-supplied target URL (`depth = 0`) while still allowing another page to win if it contains substantially stronger evidence.
 - **Deterministic Null Fallback**: If the answer is not supported by the crawled content, or if only incidental mentions exist without an explanatory predicate, it strictly outputs `null` for both the URL and excerpt.
 - **Grounding Verification**: Before emitting output, verifies that the excerpt is an exact contiguous substring of the source page's visible text.
-- **Standardized Output**: Emits results to `answer.json`.
+- **Standardized Output**: Emits results to `outputs/answer.json`.
 
 ---
 
@@ -93,7 +93,7 @@ User CLI Input
      |     RuleEngine (13 Deterministic SEO Rules)
      |        |
      |        v
-     |     JSONReporter -> audit.json & audit_summary.json
+     |     JSONReporter -> outputs/audit.json & outputs/audit_summary.json
      |
      +---> --url <URL> --nap (Q2 NAP Consistency Checker)
      |        |
@@ -110,7 +110,7 @@ User CLI Input
      |     ComparisonEngine & ConfidenceScorer
      |        |
      |        v
-     |     NAPReporter -> nap_report.json
+     |     NAPReporter -> outputs/nap_report.json
      |
      +---> --url <URL> --query <QUERY> (Q3 Grounded Website Q&A)
               |
@@ -133,7 +133,7 @@ User CLI Input
            GroundingVerifier (Asserts excerpt in source page visible text)
               |
               v
-           QAReporter -> answer.json
+           QAReporter -> outputs/answer.json
 ```
 
 ---
@@ -160,7 +160,7 @@ agents/
 │   ├── engine.py                   # RuleEngine evaluating crawled pages against rule registry
 │   ├── severity.py                 # Severity levels, issue deduplication, and score calculation
 │   ├── evidence.py                 # Concrete evidence string formatters
-│   ├── reporter.py                 # JSONReporter exporting audit.json, audit_summary.json, CLI table
+│   ├── reporter.py                 # JSONReporter exporting outputs/audit.json, outputs/audit_summary.json, CLI table
 │   └── rules/                      # 13 deterministic SEO audit rule implementations
 │       ├── __init__.py             # Rule registry
 │       ├── base.py                 # BaseRule abstract class
@@ -187,7 +187,7 @@ agents/
 │   ├── normalizers.py              # International phone, address abbreviation, and name normalization
 │   ├── comparison_engine.py        # Deterministic comparison, address component analysis, verdicts
 │   ├── confidence.py               # Source-weighted confidence scoring calculator
-│   └── reporter.py                 # Exports nap_report.json array and formatted CLI summary table
+│   └── reporter.py                 # Exports outputs/nap_report.json array and formatted CLI summary table
 │
 ├── site_qa/                        # Q3: Grounded Website Question-Answering Package
 │   ├── __init__.py                 # Package exports
@@ -199,13 +199,13 @@ agents/
 │   ├── searcher.py                 # PassageSearcher with predicate detection, depth boost, support gating
 │   ├── excerpt_extractor.py        # Bounding sentence window extractor preserving exact verbatim text
 │   ├── verifier.py                 # GroundingVerifier confirming substring existence in source visible text
-│   └── reporter.py                 # Exports answer.json and formatted CLI summary table
+│   └── reporter.py                 # Exports outputs/answer.json and formatted CLI summary table
 │
-├── tests/                          # Automated Pytest Test Suite (93 tests)
+├── tests/                          # Automated Pytest Test Suite (95 tests)
 │   ├── __init__.py
 │   ├── test_crawler.py             # Crawler page limits and depth boundaries (2 tests)
 │   ├── test_parser.py              # DOM metadata extraction (1 test)
-│   ├── test_reporter.py            # Q1 JSON output schema verification (1 test)
+│   ├── test_reporter.py            # Q1 JSON output schema & outputs directory creation (3 tests)
 │   ├── test_rules_seo.py           # 13 SEO audit rules validation (12 tests)
 │   ├── test_url_normalizer.py      # Normalization, loops, default ports, query params (10 tests)
 │   ├── nap/                        # Q2 Test Suite (46 tests)
@@ -222,10 +222,11 @@ agents/
 │       ├── test_unsupported_queries.py# Unsupported queries and null returns (3 tests)
 │       └── test_qa_agent_e2e.py    # End-to-end multi-page routing and grounding verifier (2 tests)
 │
-├── audit.json                      # Generated Q1 finding items
-├── audit_summary.json              # Generated Q1 audit executive summary
-├── nap_report.json                 # Generated Q2 field consistency report
-└── answer.json                     # Generated Q3 grounded QA response
+└── outputs/                        # Output folder containing generated report files
+    ├── audit.json                  # Generated Q1 finding items
+    ├── audit_summary.json          # Generated Q1 audit executive summary
+    ├── nap_report.json             # Generated Q2 field consistency report
+    └── answer.json                 # Generated Q3 grounded QA response
 ```
 
 ---
@@ -302,7 +303,7 @@ python main.py --url "https://example.com"
 
 ### Advanced Crawl Options
 ```powershell
-python main.py --url "https://example.com" --max-pages 50 --max-depth 4 --delay 0.2 --output "audit.json"
+python main.py --url "https://example.com" --max-pages 50 --max-depth 4 --delay 0.2 --output "outputs/audit.json"
 ```
 
 ### Available CLI Arguments for Q1
@@ -313,13 +314,13 @@ python main.py --url "https://example.com" --max-pages 50 --max-depth 4 --delay 
 | `--max-depth` | Integer | `3` | Maximum link traversal depth from start URL. |
 | `--timeout` | Float | `10.0` | HTTP request timeout in seconds. |
 | `--delay` | Float | `0.1` | Politeness delay between consecutive requests. |
-| `--output` | String | `audit.json`| Destination path for detailed finding output. |
+| `--output` | String | `outputs/audit.json`| Destination path for detailed finding output. |
 | `--ignore-robots` | Flag | `False` | Bypass `robots.txt` crawl restrictions. |
 | `--no-ssl-verify` | Flag | `False` | Disable SSL/TLS certificate verification. |
 | `--verbose`, `-v` | Flag | `False` | Enable detailed debug logging. |
 
 ### Generated Outputs
-1. **`audit.json`**: An array of individual SEO finding objects:
+1. **`outputs/audit.json`**: An array of individual SEO finding objects:
    ```json
    [
      {
@@ -331,7 +332,7 @@ python main.py --url "https://example.com" --max-pages 50 --max-depth 4 --delay 
      }
    ]
    ```
-2. **`audit_summary.json`**: Aggregate statistics including total crawled pages, findings count, severity breakdown, metric breakdown, and URL lists.
+2. **`outputs/audit_summary.json`**: Aggregate statistics including total crawled pages, findings count, severity breakdown, metric breakdown, and URL lists.
 3. **Terminal Overview**: Displays formatted findings and crawl statistics.
 
 ---
@@ -356,9 +357,9 @@ python main.py --url "https://example.com" --nap --max-pages 30
 3. Normalizes phone numbers (E.164/international), addresses (abbreviations expanded, component segmentation), and business names (legal suffixes standardized).
 4. Evaluates whether multi-page variations represent cosmetic formatting differences or genuine business discrepancies.
 5. Calculates confidence weighted by source quality.
-6. Writes results to `nap_report.json` and prints a CLI summary table.
+6. Writes results to `outputs/nap_report.json` and prints a CLI summary table.
 
-### Example `nap_report.json` Structure
+### Example `outputs/nap_report.json` Structure
 ```json
 [
   {
@@ -460,7 +461,7 @@ To run the grounded Question-Answering agent, supply the `--query` (or `-q`) par
 python main.py --url "https://developers.google.com/search/docs/monitor-debug/search-console-start" --query "What is Google Search Console?"
 ```
 
-**Output in `answer.json`:**
+**Output in `outputs/answer.json`:**
 ```json
 {
   "query": "What is Google Search Console?",
@@ -474,7 +475,7 @@ python main.py --url "https://developers.google.com/search/docs/monitor-debug/se
 python main.py --url "https://developers.google.com/search/docs/monitor-debug/search-console-start" --query "What is the population of India?"
 ```
 
-**Output in `answer.json`:**
+**Output in `outputs/answer.json`:**
 ```json
 {
   "query": "What is the population of India?",
@@ -485,25 +486,27 @@ python main.py --url "https://developers.google.com/search/docs/monitor-debug/se
 
 ### Optional Output File Customization
 ```powershell
-python main.py --url "https://example.com" --query "What is the return policy?" --answer-file "custom_answer.json"
+python main.py --url "https://example.com" --query "What is the return policy?" --answer-file "outputs/custom_answer.json"
 ```
 
 ---
 
 ## 9. Output Files
 
+All output files are saved into the `outputs/` directory by default:
+
 | File Name | Feature | Description | Format |
 |---|---|---|---|
-| **`audit.json`** | Q1 — SEO Audit | Detailed list of all detected on-page SEO issues, with severity, evidence snippet, and recommended fix. | JSON Array of Finding Objects |
-| **`audit_summary.json`** | Q1 — SEO Audit | Executive overview with crawl duration, total pages, severity breakdown, metric breakdown, and URLs. | JSON Object |
-| **`nap_report.json`** | Q2 — NAP Checker | Comprehensive consistency report for Name, Address, and Phone fields with verdicts, confidence, and source citations. | JSON Array of Field Report Objects |
-| **`answer.json`** | Q3 — Grounded Q&A | Factual answer containing the exact source page URL and verbatim source excerpt (or `null` if unsupported). | JSON Object (`query`, `url`, `excerpt`) |
+| **`outputs/audit.json`** | Q1 — SEO Audit | Detailed list of all detected on-page SEO issues, with severity, evidence snippet, and recommended fix. | JSON Array of Finding Objects |
+| **`outputs/audit_summary.json`** | Q1 — SEO Audit | Executive overview with crawl duration, total pages, severity breakdown, metric breakdown, and URLs. | JSON Object |
+| **`outputs/nap_report.json`** | Q2 — NAP Checker | Comprehensive consistency report for Name, Address, and Phone fields with verdicts, confidence, and source citations. | JSON Array of Field Report Objects |
+| **`outputs/answer.json`** | Q3 — Grounded Q&A | Factual answer containing the exact source page URL and verbatim source excerpt (or `null` if unsupported). | JSON Object (`query`, `url`, `excerpt`) |
 
 ---
 
 ## 10. How to Test the Project
 
-The repository contains **93 automated tests** ensuring zero regressions across all features.
+The repository contains **95 automated tests** ensuring zero regressions across all features.
 
 ### Run All Tests
 ```powershell
@@ -527,7 +530,7 @@ python -m pytest tests/qa/ -v
 
 ### Expected Output
 ```
-============================= 93 passed in 1.25s ==============================
+============================= 95 passed in 0.95s ==============================
 ```
 
 ---
@@ -547,26 +550,26 @@ python -m pytest tests/ -v
 python main.py --url "https://example.com" --max-pages 5
 
 # 4. Inspect Q1 outputs
-Get-Content audit.json
-Get-Content audit_summary.json
+Get-Content outputs\audit.json
+Get-Content outputs\audit_summary.json
 
 # 5. Execute Q2 NAP consistency check
 python main.py --url "https://example.com" --nap --max-pages 5
 
 # 6. Inspect Q2 output
-Get-Content nap_report.json
+Get-Content outputs\nap_report.json
 
 # 7. Execute Q3 with a supported question
 python main.py --url "https://developers.google.com/search/docs/monitor-debug/search-console-start" --query "What is Google Search Console?" --max-pages 5
 
 # 8. Inspect Q3 supported answer
-Get-Content answer.json
+Get-Content outputs\answer.json
 
 # 9. Execute Q3 with an unsupported question
 python main.py --url "https://developers.google.com/search/docs/monitor-debug/search-console-start" --query "What is the population of India?" --max-pages 5
 
 # 10. Inspect Q3 null output
-Get-Content answer.json
+Get-Content outputs\answer.json
 ```
 
 ---
@@ -581,7 +584,7 @@ The Q3 Question-Answering Agent is strictly designed to eliminate hallucinations
    - Incidental mentions where the entity is merely an oblique instrument (`in X`, `using X`, `via X`, `with X`) are penalized and prevented from answering the question.
 3. **Strict Support Gating**: If no passage reaches the relevance threshold, or if an entity is mentioned only in passing without an answer predicate, the agent returns `url: null` and `excerpt: null`.
 4. **Deterministic Visible-Text Grounding Verification**:
-   Before writing `answer.json`, the `GroundingVerifier` extracts the clean visible text from the candidate `ParsedPage` and programmatically asserts:
+   Before writing `outputs/answer.json`, the `GroundingVerifier` extracts the clean visible text from the candidate `ParsedPage` and programmatically asserts:
    ```python
    assert excerpt in visible_text
    ```
@@ -674,10 +677,10 @@ git push -u origin main
 
 - **Source Code Repository**: Contains all source code for `seo_audit/`, `nap_checker/`, `site_qa/`, and `tests/`.
 - **Local Execution**: The project is entirely self-contained and runs locally via `python main.py` with no cloud infrastructure required.
-- **Sample Reports**: Sample artifacts generated from live crawls are included for reference:
-  - `audit.json` & `audit_summary.json` (Q1 SEO Audit)
-  - `nap_report.json` (Q2 NAP Consistency Checker)
-  - `answer.json` (Q3 Grounded Website Q&A)
+- **Sample Reports**: Sample artifacts generated from live crawls are stored in the `outputs/` folder for reference:
+  - `outputs/audit.json` & `outputs/audit_summary.json` (Q1 SEO Audit)
+  - `outputs/nap_report.json` (Q2 NAP Consistency Checker)
+  - `outputs/answer.json` (Q3 Grounded Website Q&A)
 
 ---
 

@@ -5,6 +5,7 @@ Reporter component generating audit.json, summary reports, and terminal output.
 from collections import Counter
 import json
 import logging
+from pathlib import Path
 from typing import Dict, List
 from seo_audit.models import ParsedPage, SEOFinding
 
@@ -15,7 +16,7 @@ class JSONReporter:
     """Formats and exports audit findings to audit.json and summary reports."""
 
     @staticmethod
-    def export_audit_json(findings: List[SEOFinding], output_path: str = "audit.json") -> None:
+    def export_audit_json(findings: List[SEOFinding], output_path: str = "outputs/audit.json") -> None:
         """
         Export findings to audit.json.
         Each item strictly adheres to:
@@ -27,19 +28,23 @@ class JSONReporter:
           "suggested_fix": ...
         }
         """
+        out_path = Path(output_path)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
         data = [f.to_dict() for f in findings]
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(out_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
-        logger.info(f"Successfully generated {output_path} with {len(findings)} findings.")
+        logger.info(f"Successfully generated {out_path} with {len(findings)} findings.")
 
     @staticmethod
     def export_summary_json(
         findings: List[SEOFinding],
         crawled_pages: List[ParsedPage],
         duration_seconds: float,
-        output_path: str = "audit_summary.json",
+        output_path: str = "outputs/audit_summary.json",
     ) -> None:
         """Export comprehensive summary report including metadata and breakdowns."""
+        out_path = Path(output_path)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
         severity_counts = Counter(f.severity for f in findings)
         metric_counts = Counter(f.metric for f in findings)
 
@@ -59,11 +64,16 @@ class JSONReporter:
             "findings": [f.to_dict() for f in findings],
         }
 
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(out_path, "w", encoding="utf-8") as f:
             json.dump(summary_data, f, indent=2, ensure_ascii=False)
 
 
-def print_cli_summary(findings: List[SEOFinding], crawled_pages: List[ParsedPage], duration: float) -> None:
+def print_cli_summary(
+    findings: List[SEOFinding],
+    crawled_pages: List[ParsedPage],
+    duration: float,
+    output_path: str = "outputs/audit.json",
+) -> None:
     """Print an eye-catching, structured terminal summary of the SEO audit."""
     severity_counts = Counter(f.severity for f in findings)
     metric_counts = Counter(f.metric for f in findings)
@@ -93,5 +103,5 @@ def print_cli_summary(findings: List[SEOFinding], crawled_pages: List[ParsedPage
             print(f"   - {metric:<30} [{sev.upper()}]: {count} occurrences")
         print(sub_divider)
 
-    print(" Output written to: audit.json")
+    print(f" Output written to: {output_path}")
     print(f"{divider}\n")

@@ -62,7 +62,7 @@ class NAPChecker:
     @staticmethod
     def export_report(
         reports: Dict[str, NAPFieldReport],
-        output_path: str = "nap_report.json",
+        output_path: str = "outputs/nap_report.json",
     ) -> None:
         """Write NAP report to JSON."""
         export_nap_report(reports, output_path)
@@ -72,6 +72,7 @@ class NAPChecker:
         reports: Dict[str, NAPFieldReport],
         crawled_count: int,
         duration: float,
+        output_path: str = "outputs/nap_report.json",
     ) -> None:
         """Print CLI summary table."""
-        print_nap_cli_summary(reports, crawled_count, duration)
+        print_nap_cli_summary(reports, crawled_count, duration, output_path)

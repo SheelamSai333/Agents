@@ -7,6 +7,7 @@ Usage:
 
 import argparse
 import logging
+from pathlib import Path
 import sys
 import time
 
@@ -67,7 +68,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=str,
-        default="audit.json",
+        default="outputs/audit.json",
         help="Destination path for findings output",
     )
     parser.add_argument(
@@ -101,7 +102,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--answer-file",
         type=str,
-        default="answer.json",
+        default="outputs/answer.json",
         help="Destination path for Q3 answer JSON output",
     )
     return parser.parse_args()
@@ -144,12 +145,12 @@ def main() -> int:
 
         nap_checker.export_report(
             reports,
-            output_path="nap_report.json",
+            output_path="outputs/nap_report.json",
         )
 
         duration = time.time() - start_time
 
-        nap_checker.print_summary(reports, len(crawled_pages), duration)
+        nap_checker.print_summary(reports, len(crawled_pages), duration, output_path="outputs/nap_report.json")
 
         return 0
 
@@ -161,7 +162,7 @@ def main() -> int:
         qa_agent.export_answer(response, output_path=args.answer_file)
 
         duration = time.time() - start_time
-        qa_agent.print_summary(response, len(crawled_pages), duration)
+        qa_agent.print_summary(response, len(crawled_pages), duration, output_path=args.answer_file)
 
         return 0
 
@@ -172,12 +173,16 @@ def main() -> int:
 
     duration = time.time() - start_time
 
+    # Determine summary path in same directory as output_file
+    out_dir = Path(config.output_file).parent
+    summary_path = str(out_dir / "audit_summary.json")
+
     # Export audit.json & summary
     JSONReporter.export_audit_json(findings, output_path=config.output_file)
-    JSONReporter.export_summary_json(findings, crawled_pages, duration, output_path="audit_summary.json")
+    JSONReporter.export_summary_json(findings, crawled_pages, duration, output_path=summary_path)
 
     # Print terminal overview
-    print_cli_summary(findings, crawled_pages, duration)
+    print_cli_summary(findings, crawled_pages, duration, output_path=config.output_file)
 
     return 0
 

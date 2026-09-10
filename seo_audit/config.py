@@ -26,8 +26,8 @@ class AuditConfig:
     verify_ssl: bool = True
 
     # Output options
-    output_file: str = "audit.json"
-    summary_file: str = "audit_summary.json"
+    output_file: str = "outputs/audit.json"
+    summary_file: str = "outputs/audit_summary.json"
 
     # Link & asset verification
     check_broken_links: bool = True

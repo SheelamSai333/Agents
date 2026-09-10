@@ -12,9 +12,10 @@ from site_qa.models import QAResponse
 logger = logging.getLogger(__name__)
 
 
-def export_answer_json(response: QAResponse, output_path: str = "answer.json") -> None:
+def export_answer_json(response: QAResponse, output_path: str = "outputs/answer.json") -> None:
     """Export QAResponse to answer.json matching assignment specification."""
     path = Path(output_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
     data = response.to_dict()
 
     with open(path, "w", encoding="utf-8") as f:
@@ -27,6 +28,7 @@ def print_qa_cli_summary(
     response: QAResponse,
     crawled_count: int,
     duration: float,
+    output_path: str = "outputs/answer.json",
 ) -> None:
     """Print formatted terminal overview for Q3 QA results."""
     width = 80
@@ -56,4 +58,5 @@ def print_qa_cli_summary(
         print("  No verifiable answer found in crawled page content.")
         print("  Emitted null result as required by assignment specification.")
 
+    print(f"  Output written to: {output_path}")
     print("=" * width + "\n")

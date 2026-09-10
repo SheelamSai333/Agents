@@ -114,7 +114,7 @@ class QAAgent:
     def export_answer(
         self,
         response: QAResponse,
-        output_path: str = "answer.json",
+        output_path: str = "outputs/answer.json",
     ) -> None:
         """Export answer to JSON."""
         export_answer_json(response, output_path)
@@ -124,6 +124,7 @@ class QAAgent:
         response: QAResponse,
         crawled_count: int,
         duration: float,
+        output_path: str = "outputs/answer.json",
     ) -> None:
         """Print CLI summary table."""
-        print_qa_cli_summary(response, crawled_count, duration)
+        print_qa_cli_summary(response, crawled_count, duration, output_path)
