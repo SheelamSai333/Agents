@@ -1,0 +1,5 @@
+Q1 : python main.py --url https://ventrivo.vercel.app/   
+ 
+Q2:  python main.py --url https://ventrivo.vercel.app/ --nap    
+
+Q3 : python main.py --url "https://ventrivo.vercel.app/" --query "Where is the Ugadi Ventures project located?"
