@@ -242,7 +242,7 @@ agents/
 - `httpx>=0.27.0`: High-performance HTTP client supporting HTTP/1.1, connection pooling, and SSL verification.
 - `beautifulsoup4>=4.12.0`: HTML/XML DOM parsing and navigation.
 - `lxml>=5.2.0`: Fast C-based HTML parsing engine.
-- `pytest>=8.0.0`: Testing framework for running the 93 unit and integration tests.
+- `pytest>=8.0.0`: Testing framework for running the 95 unit and integration tests.
 
 ### Optional Headless Browser (for JavaScript SPAs)
 - `playwright`: If installed, enables automatic headless Chromium rendering for client-side JavaScript Single Page Applications (e.g. Next.js, React SPA). If Playwright is not installed, the crawler operates purely over standard HTTP responses.
@@ -285,7 +285,7 @@ playwright install chromium
 ```
 
 ### Step 5: Verify Installation
-Run the test suite to ensure all 93 tests pass:
+Run the test suite to ensure all 95 tests pass:
 ```powershell
 python -m pytest tests/ -v
 ```

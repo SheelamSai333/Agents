@@ -192,6 +192,18 @@ def test_us_phone_formatting_equivalence():
     assert report.verdict in ("consistent", "minor_formatting_difference")
 
 
+def test_indian_phone_formatting_equivalence():
+    """Indian phone with +91 and without +91 should be equivalent."""
+    engine = ComparisonEngine()
+    occurrences = [
+        _occ("phone", "+91 92749 85691", "919274985691", "https://example.com/"),
+        _occ("phone", "92749 85691", "9274985691", "https://example.com/contact"),
+    ]
+    report = engine.compare_field(occurrences, "phone")
+    assert report.verdict in ("consistent", "minor_formatting_difference")
+
+
+
 # ─── Pages_compared accuracy ──────────────────────────────────────────
 
 def test_pages_compared_only_includes_relevant_pages():

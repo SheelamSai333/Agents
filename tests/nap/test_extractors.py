@@ -197,3 +197,59 @@ def test_multiple_jsonld_blocks():
     names = [o.raw_value for o in occurrences if o.field == "name"]
     assert "Biz Alpha" in names
     assert "Biz Beta" in names
+
+
+def test_company_cards_and_lists_are_not_extracted_as_brand_name():
+    html = """
+    <html>
+    <head><title>Companies | OAHelper</title></head>
+    <body>
+    <header>
+        <nav><a class="navbar-brand" href="/">OAHelper</a></nav>
+    </header>
+    <main>
+        <div class="companies-grid">
+            <div class="company-card">
+                <h3 class="company-title">Accenture</h3>
+                <p>17 questions Free + Premium</p>
+            </div>
+            <div class="company-card">
+                <h3 class="company-title">Amazon</h3>
+                <p>50 questions Coding Premium</p>
+            </div>
+            <div class="company-card">
+                <h3 class="company-title">Tesco</h3>
+            </div>
+        </div>
+    </main>
+    </body>
+    </html>
+    """
+    page = _make_page(html, url="https://oahelper.in/companies")
+    extractor = HTMLNAPExtractor()
+    occurrences = extractor.extract_from_page(page)
+
+    names = [o.raw_value for o in occurrences if o.field == "name"]
+    assert "Accenture" not in names
+    assert "Amazon" not in names
+    assert "Tesco" not in names
+    assert "OAHelper" in names
+
+
+def test_whatsapp_link_phone_extracted():
+    html = """
+    <html>
+    <body>
+        <a href="https://wa.me/919274985691">+91 92749 85691</a>
+    </body>
+    </html>
+    """
+    page = _make_page(html, url="https://oahelper.in/contact")
+    extractor = HTMLNAPExtractor()
+    occurrences = extractor.extract_from_page(page)
+
+    phones = [o for o in occurrences if o.field == "phone"]
+    assert len(phones) >= 1
+    assert phones[0].normalized_value == "919274985691"
+    assert phones[0].source_quality >= 0.80
+

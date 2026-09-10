@@ -1,982 +1,513 @@
 [
   {
+    "metric": "robots_noindex",
+    "page": "https://www.oahelper.in/company-questions/tesco9sep",
+    "severity": "critical",
+    "evidence": "<meta name=\"robots\" content=\"noindex, nofollow\"> contains 'noindex', preventing search engines from indexing this page.",
+    "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+  },
+  {
     "metric": "multiple_h1",
-    "page": "https://www.python.org/",
+    "page": "https://www.oahelper.in/assessment-mode",
     "severity": "high",
-    "evidence": "Found 5 <h1> elements: '<h1>Intuitive Interpretation</h1>', '<h1>Compound Data Types</h1>', '<h1>All the Flow You’d Expect</h1>'.",
+    "evidence": "Found 2 <h1> elements: '<h1>Assessment Mode - Companies with Timed OA Practice</h1>', '<h1 class=\"text-5xl md:text-7xl font-medium tracking-tigh...'.",
     "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
   },
   {
     "metric": "multiple_h1",
-    "page": "https://www.python.org/about/apps/",
+    "page": "https://www.oahelper.in/problems",
     "severity": "high",
-    "evidence": "Found 7 <h1> elements: '<h1 class=\"page-title\">Applications for Python</h1>', '<h1>Web and Internet Development</h1>', '<h1>Scientific and Numeric</h1>'.",
+    "evidence": "Found 2 <h1> elements: '<h1 class=\"text-2xl font-bold tracking-tight text-white s...', '<h1 class=\"text-[22px] font-semibold tracking-tight\">Prob...'.",
     "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/about/gettingstarted/",
-    "severity": "high",
-    "evidence": "Found 6 <h1> elements: '<h1 class=\"page-title\">Python For Beginners</h1>', '<h1>Installing</h1>', '<h1>Learning</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/about/help/",
-    "severity": "high",
-    "evidence": "Found 10 <h1> elements: '<h1 class=\"page-title\">Help</h1>', '<h1>New to programming and to Python?</h1>', '<h1>New to Python?</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/about/quotes/",
-    "severity": "high",
-    "evidence": "Found 13 <h1> elements: '<h1 class=\"page-title\">Quotes about Python</h1>', '<h1>YouTube.com</h1>', '<h1>Industrial Light &amp; Magic</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "high",
-    "evidence": "Found 3 <h1> elements: '<h1 class=\"page-title\">Diversity</h1>', '<h1>Diversity Statement</h1>', '<h1>Diversity Appendix</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/community/irc/",
-    "severity": "high",
-    "evidence": "Found 3 <h1> elements: '<h1 class=\"page-title\">Internet Relay Chat</h1>', '<h1>Other Channels</h1>', '<h1>Other Sites</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "high",
-    "evidence": "Found 11 <h1> elements: '<h1 class=\"page-title\">Mailing lists</h1>', '<h1>Python mailing lists and newsgroups</h1>', '<h1>comp.lang.python newsgroup and python-list mailing li...'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/doc/av/",
-    "severity": "high",
-    "evidence": "Found 4 <h1> elements: '<h1 class=\"page-title\">Audio/Video Instructional Material...', '<h1>Podcast Repositories</h1>', '<h1>Inactive Podcast Repositories</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/doc/essays/",
-    "severity": "high",
-    "evidence": "Found 3 <h1> elements: '<h1 class=\"page-title\">Python Documentation Index</h1>', '<h1>Python Essays</h1>', '<h1>Table of contents (in mostly chronological order)</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/download/other/",
-    "severity": "high",
-    "evidence": "Found 10 <h1> elements: '<h1 class=\"page-title\">Download Python for other platform...', '<h1>Python for AIX</h1>', '<h1>Python for HP-UX</h1>'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/downloads/",
-    "severity": "high",
-    "evidence": "Found 6 <h1> elements: '<h1 class=\"call-to-action\">Download the latest version fo...', '<h1 class=\"call-to-action\">Download the latest source rel...', '<h1 class=\"call-to-action\">Download the latest version fo...'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "multiple_h1",
-    "page": "https://www.python.org/psf-landing/",
-    "severity": "high",
-    "evidence": "Found 5 <h1> elements: '<h1 class=\"call-to-action\">The Python Software Foundation...', '<h1>We support the Python Community through...</h1>', '<h1 style=\"text-align: center; color: #666666;\"> Grants <...'.",
-    "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/",
-    "severity": "medium",
-    "evidence": "Title has only 21 characters: 'Welcome to Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/about/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/about/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/about/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/about/",
-    "severity": "medium",
-    "evidence": "Title has only 26 characters: 'About Python™ | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/about/apps/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/about/apps/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/about/apps/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/about/apps/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/about/gettingstarted/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/about/gettingstarted/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/about/gettingstarted/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/about/gettingstarted/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/about/help/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/about/help/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/about/help/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/about/help/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/about/help/",
-    "severity": "medium",
-    "evidence": "Title has only 17 characters: 'Help | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/about/quotes/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/about/quotes/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/about/quotes/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/about/quotes/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/community/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/community/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4>Libera.Chat IRC General Channels</h4>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/community/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/community/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/community/",
-    "severity": "medium",
-    "evidence": "Title has only 26 characters: 'Our Community | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/community/diversity/",
-    "severity": "medium",
-    "evidence": "Title has only 22 characters: 'Diversity | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/community/forums/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/community/forums/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/community/forums/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/community/forums/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
   },
   {
     "metric": "thin_content",
-    "page": "https://www.python.org/community/forums/",
+    "page": "https://www.oahelper.in",
     "severity": "medium",
-    "evidence": "Page contains only 96 visible words (recommended minimum: 200 words). Sample: 'Notice This page displays fallback because interactive scripts did not run Possible causes include disabled JavaScript or failure to load scripts or stylesheets Python Forums The official Python Community forums are hosted at discuss python org If you re looking...'",
-    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/community/forums/",
-    "severity": "medium",
-    "evidence": "Title has only 19 characters: 'Forums | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/community/irc/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/community/irc/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/community/irc/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/community/irc/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/community/lists/",
-    "severity": "medium",
-    "evidence": "Title has only 26 characters: 'Mailing lists | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/doc/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/doc/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/doc/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "thin_content",
-    "page": "https://www.python.org/doc/",
-    "severity": "medium",
-    "evidence": "Page contains only 186 visible words (recommended minimum: 200 words). Sample: 'Notice This page displays fallback because interactive scripts did not run Possible causes include disabled JavaScript or failure to load scripts or stylesheets Beginner Beginner Guide Python FAQs Moderate Python Periodicals Python Books Advanced Python Packaging User Guide In development...'",
+    "evidence": "Page contains only 183 visible words (recommended minimum: 200 words). Sample: 'NEW Company wise online assessment practice Practice What Companies Actually Ask Practice company wise online assessment questions strengthen your coding skills and learn from interview experiences shared by other candidates Start Practicing Tracked Companies Our Students Have Been Placed At...'",
     "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
   },
   {
     "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/doc/av/",
+    "page": "https://www.oahelper.in/assessment-mode",
     "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/doc/av/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/doc/essays/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/doc/essays/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/doc/essays/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/doc/essays/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/download/alternatives/",
-    "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-2xl font-medium text-white tracking-tight leading-tight trunc...'.",
     "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
     "metric": "meta_description_too_long",
-    "page": "https://www.python.org/download/alternatives/",
+    "page": "https://www.oahelper.in/assessment-mode",
     "severity": "medium",
-    "evidence": "Meta description contains 259 characters: 'This site hosts the \"traditional\" implementation of Python (nicknamed CPython). A number of alternative implementations are available as well and several vendors have repackaged CPython to include more libraries or specialized it for a particular application.' (exceeds recommended 160 characters max).",
+    "evidence": "Meta description contains 188 characters: 'Take real-time, timed company assessments on OAHelper. Pick a company, get a 60 or 90 minute timer, and finish with an instant report card. Companies without MCQ questions are listed here.' (exceeds recommended 160 characters max).",
     "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
   },
   {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/download/alternatives/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/download/other/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
     "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/download/other/",
+    "page": "https://www.oahelper.in/companies",
     "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"widget-title\">The PSF</h3>'.",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"google-text text-[18px] font-semibold text-white tracking-[-0.2px]...'.",
     "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/download/other/",
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/companies",
     "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/download/other/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    "evidence": "Title has only 20 characters: 'Companies | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
   },
   {
     "metric": "heading_hierarchy_skipped",
-    "page": "https://www.python.org/downloads/",
+    "page": "https://www.oahelper.in/company-insights",
     "severity": "medium",
-    "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 id=\"sigstore\" style=\"color:#999999\">Sigstore verification</h4>'.",
-    "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/downloads/",
-    "severity": "medium",
-    "evidence": "Title has only 28 characters: 'Download Python | Python.org' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/android/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/android/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/android/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/ios/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/ios/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/ios/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-3xl font-medium text-white mb-2 tracking-tight leading-tight ...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
     "metric": "thin_content",
-    "page": "https://www.python.org/downloads/ios/",
+    "page": "https://www.oahelper.in/company-insights",
     "severity": "medium",
-    "evidence": "Page contains only 85 visible words (recommended minimum: 200 words). Sample: 'Notice This page displays fallback because interactive scripts did not run Possible causes include disabled JavaScript or failure to load scripts or stylesheets Python Downloads iOS Latest Python Release Python 14 Stable Releases Pre releases Python 15 0rc2 Sept 2026...'",
+    "evidence": "Page contains only 78 visible words (recommended minimum: 200 words). Sample: 'Hot Aug 24 2026 amazon Amazon has 376 published OA questions on OAHelper Most reported topics Array Greedy Sorting Has 376 questions Aug 24 2026 Hot Aug 24 2026 blackrock Blackrock has 213 published OA questions on OAHelper Most reported...'",
     "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
   },
   {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/macos/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/macos/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/macos/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/source/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/source/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/source/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/downloads/windows/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/downloads/windows/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/downloads/windows/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/jobs/",
-    "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/jobs/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/jobs/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
-  },
-  {
     "metric": "title_too_short",
-    "page": "https://www.python.org/jobs/",
+    "page": "https://www.oahelper.in/company-insights",
     "severity": "medium",
-    "evidence": "Title has only 29 characters: 'Python Job Board | Python.org' (recommended minimum is 30).",
+    "evidence": "Title has only 27 characters: 'Company Insights | OAHelper' (recommended minimum is 30).",
     "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
   },
   {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/psf-landing/",
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/accenture",
     "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/psf-landing/",
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/company-questions/accenture",
     "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
+    "evidence": "Meta description contains 164 characters: 'Accenture online assessment questions: practice 103+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
   },
   {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/psf-landing/",
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/amazon",
     "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
-    "metric": "title_too_short",
-    "page": "https://www.python.org/psf-landing/",
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/american-express",
     "severity": "medium",
-    "evidence": "Title has only 26 characters: 'Python Software Foundation' (recommended minimum is 30).",
-    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
   },
   {
-    "metric": "duplicate_meta_description",
-    "page": "https://www.python.org/psf/annual-report/2024/",
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/company-questions/american-express",
     "severity": "medium",
-    "evidence": "Duplicate meta description 'the official home of the python programming language' shared across 23 pages: https://www.python.org/, https://www.python.org/psf-landing/, https://www.python.org/jobs/, https://www.python.org/community/ (and 19 more).",
-    "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
-  },
-  {
-    "metric": "meta_description_too_short",
-    "page": "https://www.python.org/psf/annual-report/2024/",
-    "severity": "medium",
-    "evidence": "Meta description contains only 52 characters: 'The official home of the Python Programming Language' (recommended minimum is 70).",
-    "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
-  },
-  {
-    "metric": "missing_canonical",
-    "page": "https://www.python.org/psf/annual-report/2024/",
-    "severity": "medium",
-    "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
-    "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    "evidence": "Meta description contains 170 characters: 'American Express online assessment questions: practice 17+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
   },
   {
     "metric": "thin_content",
-    "page": "https://www.python.org/psf/annual-report/2024/",
+    "page": "https://www.oahelper.in/company-questions/american-express",
     "severity": "medium",
-    "evidence": "Page contains only 156 visible words (recommended minimum: 200 words). Sample: 'Notice This page displays fallback because interactive scripts did not run Possible causes include disabled JavaScript or failure to load scripts or stylesheets PSF About Annual Impact Report The Python Software Foundation 2024 Annual Impact Report In 2024 the Python...'",
+    "evidence": "Page contains only 152 visible words (recommended minimum: 200 words). Sample: 'All Companies American Express OA Questions 17 Questions Online Assessment Your progress 17 solved in this company complete 01 Minimal Cost of Cutting Chain Into Three Pieces Coding 02 Recover Two Row Binary Board From Its Sums Coding 03 Reduce...'",
     "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
   },
   {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/arista",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/company-questions/arista",
+    "severity": "medium",
+    "evidence": "Page contains only 105 visible words (recommended minimum: 200 words). Sample: 'All Companies Arista OA Questions 12 Questions Online Assessment Your progress 12 solved in this company complete 01 Minimum Edge Reversals to Root the Network Coding 02 Count Increasing Triplets Under Threshold Coding 03 Shortest Substring with Prefix and Suffix...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+    "severity": "medium",
+    "evidence": "Meta description contains 169 characters: 'Arpwood Capital online assessment questions: practice 68+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/cmart",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/company-questions/cmart",
+    "severity": "medium",
+    "evidence": "Page contains only 127 visible words (recommended minimum: 200 words). Sample: 'All Companies CMART OA Questions 12 Questions Online Assessment Your progress 12 solved in this company complete 01 Grid Infection with Recovery After Days Coding 02 Grid Infection with Immune Cells Coding 03 Days Until an Eight Direction Infection Grid...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/squadstackai",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/company-questions/squadstackai",
+    "severity": "medium",
+    "evidence": "Meta description contains 166 characters: 'SquadStack.ai online assessment questions: practice 3+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/company-questions/squadstackai",
+    "severity": "medium",
+    "evidence": "Page contains only 48 visible words (recommended minimum: 200 words). Sample: 'All Companies SquadStack ai OA Questions Questions Online Assessment Your progress solved in this company complete 01 Sellers Who Out Earn Their Whole Marketplace SQL 02 Minimum Time Slots for Cloud Kitchen With Per Dish Cooldowns Coding 03 Fewest Die...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/company-questions/tesco9sep",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/company-questions/tesco9sep",
+    "severity": "medium",
+    "evidence": "Meta description contains 163 characters: 'Tesco_9sep online assessment questions: practice 1+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/company-questions/tesco9sep",
+    "severity": "medium",
+    "evidence": "Page contains only 24 visible words (recommended minimum: 200 words). Sample: 'All Companies Tesco_9sep OA Questions Questions Online Assessment Your progress solved in this company complete 01 Cyclic Anticlockwise Rotation of Every Matrix Layer Coding...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/contact",
+    "severity": "medium",
+    "evidence": "Page contains only 76 visible words (recommended minimum: 200 words). Sample: 'Back Get in Touch Have questions about OAHelper Want to explore how it works for your college We re here to help Contact information Email shyam saktawat nxtwave co in Website www oahelper in Response time We usually respond within...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/contact",
+    "severity": "medium",
+    "evidence": "Title has only 21 characters: 'Contact Us | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/contribute",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-white font-medium\">Interview Reviews</h3>'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "thin_content",
+    "page": "https://www.oahelper.in/contribute",
+    "severity": "medium",
+    "evidence": "Page contains only 64 visible words (recommended minimum: 200 words). Sample: 'Community Powered For the Students By the Students With the Students Back to Home 00 Want to use without paying It totally possible with OACoins OACoin Interview Reviews 10 30 Coding DSA LLD experiences View Contribute Share OA Questions 20...'",
+    "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/contribute",
+    "severity": "medium",
+    "evidence": "Title has only 21 characters: 'Contribute | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/interview-experiences",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"truncate font-bold tracking-[-0.02em] text-white text-[17px]\">C DA...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/mock-oa",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"truncate text-[26px] font-bold leading-tight tracking-[-0.03em] te...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/mock-oa",
+    "severity": "medium",
+    "evidence": "Meta description contains 172 characters: 'Practice real company online assessments on OAHelper. Pick a company, take a timed full-screen Mock OA with coding and MCQ sections, and finish with an instant report card.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+  },
+  {
+    "metric": "title_too_long",
+    "page": "https://www.oahelper.in/mock-oa",
+    "severity": "medium",
+    "evidence": "Title contains 62 characters: 'Company Mock OAs - Timed Online Assessment Practice | OAHelper' (exceeds recommended 60 characters limit).",
+    "suggested_fix": "Shorten the title to under 60 characters to prevent truncation in Google SERPs."
+  },
+  {
+    "metric": "meta_description_too_long",
+    "page": "https://www.oahelper.in/placement-prep",
+    "severity": "medium",
+    "evidence": "Meta description contains 174 characters: 'A 9-week DSA roadmap covering 39 topics, following the bootcamp curriculum by WnCC, IIT Bombay. Theory first, then a practice set of real OA questions paced across each week.' (exceeds recommended 160 characters max).",
+    "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/placement-prep",
+    "severity": "medium",
+    "evidence": "Title has only 22 characters: 'DSA Roadmap | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "heading_hierarchy_skipped",
+    "page": "https://www.oahelper.in/premium",
+    "severity": "medium",
+    "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"mb-1.5 text-lg font-semibold tracking-[-0.015em] text-white md:mb-...'.",
+    "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/premium",
+    "severity": "medium",
+    "evidence": "Title has only 24 characters: 'Premium Plans | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/privacy-policy",
+    "severity": "medium",
+    "evidence": "Title has only 25 characters: 'Privacy Policy | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/problems",
+    "severity": "medium",
+    "evidence": "Title has only 19 characters: 'Problems | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/refund-policy",
+    "severity": "medium",
+    "evidence": "Title has only 24 characters: 'Refund Policy | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/terms-of-service",
+    "severity": "medium",
+    "evidence": "Title has only 27 characters: 'Terms of Service | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/topics",
+    "severity": "medium",
+    "evidence": "Title has only 24 characters: 'Coding Topics | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
+    "metric": "title_too_short",
+    "page": "https://www.oahelper.in/trust-oahelper",
+    "severity": "medium",
+    "evidence": "Title has only 25 characters: 'Trust & Safety | OAHelper' (recommended minimum is 30).",
+    "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+  },
+  {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/",
+    "page": "https://www.oahelper.in",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/about/",
+    "page": "https://www.oahelper.in/assessment-mode",
     "severity": "low",
-    "evidence": "Found 2 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...', '<a href=\"/community/lists\"></a>'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/about/apps/",
+    "page": "https://www.oahelper.in/companies",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/about/gettingstarted/",
+    "page": "https://www.oahelper.in/company-insights",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/about/help/",
+    "page": "https://www.oahelper.in/company-questions/accenture",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/about/quotes/",
+    "page": "https://www.oahelper.in/company-questions/amazon",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/community/",
+    "page": "https://www.oahelper.in/company-questions/american-express",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/community/diversity/",
+    "page": "https://www.oahelper.in/company-questions/arista",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/community/forums/",
+    "page": "https://www.oahelper.in/company-questions/arpwood-capital",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/community/irc/",
+    "page": "https://www.oahelper.in/company-questions/cmart",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/community/lists/",
+    "page": "https://www.oahelper.in/company-questions/squadstackai",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/doc/",
+    "page": "https://www.oahelper.in/company-questions/tesco9sep",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/doc/av/",
+    "page": "https://www.oahelper.in/contact",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/doc/essays/",
+    "page": "https://www.oahelper.in/contribute",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/download/alternatives/",
+    "page": "https://www.oahelper.in/interview-experiences",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/download/other/",
+    "page": "https://www.oahelper.in/mock-oa",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/",
+    "page": "https://www.oahelper.in/oa-calendar",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
-    "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
-  },
-  {
-    "metric": "missing_href",
-    "page": "https://www.python.org/downloads/",
-    "severity": "low",
-    "evidence": "Anchor element is missing an 'href' attribute: '<a href=\"\">Release notes</a>'.",
-    "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
-  },
-  {
-    "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/android/",
-    "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/ios/",
+    "page": "https://www.oahelper.in/placement-prep",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/macos/",
+    "page": "https://www.oahelper.in/premium",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/source/",
+    "page": "https://www.oahelper.in/privacy-policy",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/downloads/windows/",
+    "page": "https://www.oahelper.in/problems",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
+    "evidence": "Found 3 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/jobs/",
+    "page": "https://www.oahelper.in/refund-policy",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/\"><img alt=\"python™\" class=\"python-logo\" src=\"/...'.",
-    "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
-  },
-  {
-    "metric": "missing_href",
-    "page": "https://www.python.org/jobs/",
-    "severity": "low",
-    "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"disabled\" href=\"\">Prev</a>'.",
-    "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
-  },
-  {
-    "metric": "empty_anchor_text",
-    "page": "https://www.python.org/psf-landing/",
-    "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/psf-landing/\"><img alt=\"Python Software Foundat...'.",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   },
   {
     "metric": "empty_anchor_text",
-    "page": "https://www.python.org/psf/annual-report/2024/",
+    "page": "https://www.oahelper.in/terms-of-service",
     "severity": "low",
-    "evidence": "Found 1 internal link(s) with empty anchor text: '<a href=\"/psf-landing/\"><img alt=\"Python Software Foundat...'.",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+    "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+  },
+  {
+    "metric": "empty_anchor_text",
+    "page": "https://www.oahelper.in/topics",
+    "severity": "low",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+    "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+  },
+  {
+    "metric": "empty_anchor_text",
+    "page": "https://www.oahelper.in/trust-oahelper",
+    "severity": "low",
+    "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
     "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
   }
 ]

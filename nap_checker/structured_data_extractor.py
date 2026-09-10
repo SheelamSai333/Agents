@@ -26,6 +26,7 @@ TARGET_TYPES = {
     "FinancialService",
     "RealEstateAgent",
     "AutoDealer",
+    "WebSite",
 }
 
 

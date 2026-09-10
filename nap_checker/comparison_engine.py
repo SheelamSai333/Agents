@@ -37,11 +37,19 @@ class ComparisonEngine:
             if occurrence.raw_value
         ))
 
-        normalized_values = list(dict.fromkeys(
-            occurrence.normalized_value
-            for occurrence in field_occurrences
-            if occurrence.normalized_value
-        ))
+        if field == "phone":
+            raw_normalized = list(dict.fromkeys(
+                occurrence.normalized_value
+                for occurrence in field_occurrences
+                if occurrence.normalized_value
+            ))
+            normalized_values = _canonicalize_phone_values(raw_normalized)
+        else:
+            normalized_values = list(dict.fromkeys(
+                occurrence.normalized_value
+                for occurrence in field_occurrences
+                if occurrence.normalized_value
+            ))
 
         evidence = [
             NAPEvidence(
@@ -126,17 +134,26 @@ class ComparisonEngine:
         comparison_occurrences = trusted or usable
 
         if field == "phone":
-            # Build canonical phone values using suffix-matching.
-            # A bare local number (e.g. "9876543210") is equivalent to
-            # a country-coded number (e.g. "919876543210") if the longer
-            # number ends with the shorter one.  This avoids hardcoding
-            # any specific country code.
-            raw_normalized = list(dict.fromkeys(
+            # Canonicalize phone values using suffix-matching across all usable occurrences.
+            usable_raw_norm = list(dict.fromkeys(
                 occ.normalized_value
-                for occ in comparison_occurrences
+                for occ in usable
             ))
+            all_canonical = _canonicalize_phone_values(usable_raw_norm)
 
-            canonical_values = _canonicalize_phone_values(raw_normalized)
+            # If all usable occurrences resolve to the same canonical phone number,
+            # then even lower-quality occurrences corroborate the trusted one(s) and
+            # should NOT be discarded.
+            if len(all_canonical) == 1:
+                comparison_occurrences = usable
+                canonical_values = all_canonical
+            else:
+                # Genuine conflict: filter to trusted occurrences if available
+                raw_normalized = list(dict.fromkeys(
+                    occ.normalized_value
+                    for occ in comparison_occurrences
+                ))
+                canonical_values = _canonicalize_phone_values(raw_normalized)
 
             if len(canonical_values) == 1:
                 raw_values = list(dict.fromkeys(
@@ -147,7 +164,7 @@ class ComparisonEngine:
                 if len(comparison_occurrences) == 1:
                     quality = comparison_occurrences[0].source_quality
 
-                    if quality >= 0.8:
+                    if quality >= 0.75:
                         return (
                             "consistent",
                             "One high-quality phone occurrence was found."

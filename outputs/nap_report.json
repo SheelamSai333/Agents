@@ -2,739 +2,343 @@
   {
     "field": "name",
     "pages_compared": [
-      "https://www.python.org/",
-      "https://www.python.org/about/",
-      "https://www.python.org/about/apps/",
-      "https://www.python.org/about/quotes/",
-      "https://www.python.org/about/gettingstarted/",
-      "https://www.python.org/about/help/",
-      "https://www.python.org/downloads/",
-      "https://www.python.org/psf-landing/",
-      "https://www.python.org/jobs/",
-      "https://www.python.org/community/",
-      "https://www.python.org/community/irc/",
-      "https://www.python.org/downloads/source/",
-      "https://www.python.org/downloads/windows/",
-      "https://www.python.org/downloads/macos/",
-      "https://www.python.org/downloads/android/",
-      "https://www.python.org/downloads/ios/",
-      "https://www.python.org/download/other/",
-      "https://www.python.org/download/alternatives/",
-      "https://www.python.org/doc/",
-      "https://www.python.org/doc/av/",
-      "https://www.python.org/doc/essays/",
-      "https://www.python.org/community/diversity/",
-      "https://www.python.org/community/lists/",
-      "https://www.python.org/community/forums/",
-      "https://www.python.org/psf/annual-report/2024/"
+      "https://www.oahelper.in",
+      "https://www.oahelper.in/contact",
+      "https://www.oahelper.in/oa-calendar",
+      "https://www.oahelper.in/trust-oahelper",
+      "https://www.oahelper.in/company-questions/accenture",
+      "https://www.oahelper.in/company-questions/cmart",
+      "https://www.oahelper.in/contribute",
+      "https://www.oahelper.in/companies",
+      "https://www.oahelper.in/problems",
+      "https://www.oahelper.in/topics",
+      "https://www.oahelper.in/interview-experiences",
+      "https://www.oahelper.in/mock-oa",
+      "https://www.oahelper.in/placement-prep",
+      "https://www.oahelper.in/assessment-mode",
+      "https://www.oahelper.in/company-insights",
+      "https://www.oahelper.in/premium",
+      "https://www.oahelper.in/terms-of-service",
+      "https://www.oahelper.in/privacy-policy",
+      "https://www.oahelper.in/refund-policy",
+      "https://www.oahelper.in/company-questions/amazon",
+      "https://www.oahelper.in/company-questions/american-express",
+      "https://www.oahelper.in/company-questions/arista",
+      "https://www.oahelper.in/company-questions/arpwood-capital",
+      "https://www.oahelper.in/company-questions/tesco9sep",
+      "https://www.oahelper.in/company-questions/squadstackai"
     ],
     "values": [
-      "Python.org",
-      "python™",
-      "Welcome to Python.org",
-      "Python Software Foundation",
-      "New Agentic Python Engineer Evaboot Remote, Remote/Worldwide, Remote/Worldwide, Remote",
-      "New Agentic Python Engineer Evaboot",
-      "Developer / Engineer",
-      "New Software Engineer Raven Technologies Group LLC Remote, United States of America",
-      "New Software Engineer Raven Technologies Group LLC",
-      "New Senior Python Developer Adzuna Remote (within 2 hours of London timezone), Remote",
-      "New Senior Python Developer Adzuna",
-      "New Agentic Python Engineer Evaboot Remote, Remote, Worldwide",
-      "New Python developer Eleks Poland, Lviv, Ivano-Frankivsk, Ternopil, Uzhhorod, Chernivtsi or Kyiv, Ukraine/Poland",
-      "New Python developer Eleks",
-      "New Python/DevOps Engineer NordVpn/NordSecurity Vilnius / Kaunas / Warsaw, Lithuania/Poland",
-      "New Python/DevOps Engineer NordVpn/NordSecurity",
-      "New Software Engineer (Remote) Softech Associate Panama City Beach, Florida, United States",
-      "New Software Engineer (Remote) Softech Associate",
-      "New Agentic Python Engineer Evaboot Remote, Remote/Worldwide, Remote/Worldwide",
-      "New Backend Software Engineer (FastAPI) -Onsite in Katy, Texas Off Duty Management Katy, TX, United States",
-      "New Backend Software Engineer (FastAPI) -Onsite in Katy, Texas Off Duty Management",
-      "Lead Python Backend Engineer Reef Technologies Warsaw (fully remote), Poland",
-      "Lead Python Backend Engineer Reef Technologies",
-      "Senior Python Backend Engineer Reef Technologies Warsaw (fully remote), Poland",
-      "Senior Python Backend Engineer Reef Technologies",
-      "Python Backend Engineer Constelli Signals Hyderabad, Telangana, India",
-      "Python Backend Engineer Constelli Signals",
-      "Senior Full-Stack Engineer [Full Time; 100% remote; US-only] Hive Collective Anywhere, Anywhere, USA",
-      "Senior Full-Stack Engineer [Full Time; 100% remote; US-only] Hive Collective",
-      "Python Developer Micro1 Miami Shores, FL, United States",
-      "Python Developer Micro1",
-      "Senior Python Engineer EPAM Miami Shores, FL, United States",
-      "Senior Python Engineer EPAM",
-      "Senior Python Engineer Turing Miami Shores, FL, United States",
-      "Senior Python Engineer Turing",
-      "Senior Python/DevOps Engineer (100% Remote - USA Only) Six Feet Up 100% Remote, USA Only",
-      "Senior Python/DevOps Engineer (100% Remote - USA Only) Six Feet Up",
-      "Python + TypeScript Engineers Fusionbox Remote (US Based), Any US State, US",
-      "Python + TypeScript Engineers Fusionbox",
-      "Senior AI-Augmented Full Stack Developer SureSwift Capital Victoria, Canada",
-      "Senior AI-Augmented Full Stack Developer SureSwift Capital",
-      "Senior Backend Python Engineer mindIT HR Agency (on behalf of a confidential client) Remote, Argentina",
-      "Senior Backend Python Engineer mindIT HR Agency (on behalf of a confidential client)",
-      "Full-Stack Engineer AIDAR Hamburg, Germany",
-      "Full-Stack Engineer AIDAR",
-      "Senior Python Engineer EPAM Worldwide, Worldwide, Worldwide",
-      "Computational Photonics Engineer LumiAIres Ltd Glasgow, Scotland, United Kingdom",
-      "Computational Photonics Engineer LumiAIres Ltd",
-      "Senior Python Developer Turing Remote, Remote, Remote",
-      "Senior Python Developer Turing",
-      "Python Machine Learning Engineer Turing Remote, Remote, Remote",
-      "Python Machine Learning Engineer Turing"
+      "OAHelper"
     ],
     "normalized_values": [
-      "python.org",
-      "python™",
-      "welcome to python.org",
-      "python software foundation",
-      "new agentic python engineer evaboot remote, remote/worldwide, remote/worldwide, remote",
-      "new agentic python engineer evaboot",
-      "developer / engineer",
-      "new software engineer raven technologies group remote, united states of america",
-      "new software engineer raven technologies group",
-      "new senior python developer adzuna remote (within 2 hours of london timezone), remote",
-      "new senior python developer adzuna",
-      "new agentic python engineer evaboot remote, remote, worldwide",
-      "new python developer eleks poland, lviv, ivano-frankivsk, ternopil, uzhhorod, chernivtsi or kyiv, ukraine/poland",
-      "new python developer eleks",
-      "new python/devops engineer nordvpn/nordsecurity vilnius / kaunas / warsaw, lithuania/poland",
-      "new python/devops engineer nordvpn/nordsecurity",
-      "new software engineer (remote) softech associate panama city beach, florida, united states",
-      "new software engineer (remote) softech associate",
-      "new agentic python engineer evaboot remote, remote/worldwide, remote/worldwide",
-      "new backend software engineer (fastapi) -onsite in katy, texas off duty management katy, tx, united states",
-      "new backend software engineer (fastapi) -onsite in katy, texas off duty management",
-      "lead python backend engineer reef technologies warsaw (fully remote), poland",
-      "lead python backend engineer reef technologies",
-      "senior python backend engineer reef technologies warsaw (fully remote), poland",
-      "senior python backend engineer reef technologies",
-      "python backend engineer constelli signals hyderabad, telangana, india",
-      "python backend engineer constelli signals",
-      "senior full-stack engineer [full time; 100% remote; us-only] hive collective anywhere, anywhere, usa",
-      "senior full-stack engineer [full time; 100% remote; us-only] hive collective",
-      "python developer micro1 miami shores, fl, united states",
-      "python developer micro1",
-      "senior python engineer epam miami shores, fl, united states",
-      "senior python engineer epam",
-      "senior python engineer turing miami shores, fl, united states",
-      "senior python engineer turing",
-      "senior python/devops engineer (100% remote - usa only) six feet up 100% remote, usa only",
-      "senior python/devops engineer (100% remote - usa only) six feet up",
-      "python + typescript engineers fusionbox remote (us based), any us state, us",
-      "python + typescript engineers fusionbox",
-      "senior ai-augmented full stack developer sureswift capital victoria, canada",
-      "senior ai-augmented full stack developer sureswift capital",
-      "senior backend python engineer mindit hr agency (on behalf of a confidential client) remote, argentina",
-      "senior backend python engineer mindit hr agency (on behalf of a confidential client",
-      "full-stack engineer aidar hamburg, germany",
-      "full-stack engineer aidar",
-      "senior python engineer epam worldwide, worldwide, worldwide",
-      "computational photonics engineer lumiaires glasgow, scotland, united kingdom",
-      "computational photonics engineer lumiaires",
-      "senior python developer turing remote, remote, remote",
-      "senior python developer turing",
-      "python machine learning engineer turing remote, remote, remote",
-      "python machine learning engineer turing"
+      "oahelper"
     ],
-    "confidence": 0.58,
-    "verdict": "genuine_mismatch",
+    "confidence": 0.83,
+    "verdict": "consistent",
     "evidence": [
       {
-        "page": "https://www.python.org/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
+      },
+      {
+        "page": "https://www.oahelper.in",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/contact",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/",
-        "raw_value": "Welcome to Python.org",
-        "source_type": "html_title",
-        "source_quality": 0.3
-      },
-      {
-        "page": "https://www.python.org/about/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/contact",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/about/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/oa-calendar",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/about/apps/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/oa-calendar",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/about/apps/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/trust-oahelper",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/about/quotes/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/trust-oahelper",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/about/quotes/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/accenture",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/about/gettingstarted/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/accenture",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/about/gettingstarted/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/cmart",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/about/help/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/cmart",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/about/help/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/contribute",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/contribute",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/companies",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/psf-landing/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/companies",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/psf-landing/",
-        "raw_value": "Python Software Foundation",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/problems",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Agentic Python Engineer Evaboot Remote, Remote/Worldwide, Remote/Worldwide, Remote",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Agentic Python Engineer Evaboot",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Developer / Engineer",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Software Engineer Raven Technologies Group LLC Remote, United States of America",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Software Engineer Raven Technologies Group LLC",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Senior Python Developer Adzuna Remote (within 2 hours of London timezone), Remote",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Senior Python Developer Adzuna",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Agentic Python Engineer Evaboot Remote, Remote, Worldwide",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Python developer Eleks Poland, Lviv, Ivano-Frankivsk, Ternopil, Uzhhorod, Chernivtsi or Kyiv, Ukraine/Poland",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Python developer Eleks",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Python/DevOps Engineer NordVpn/NordSecurity Vilnius / Kaunas / Warsaw, Lithuania/Poland",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Python/DevOps Engineer NordVpn/NordSecurity",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Software Engineer (Remote) Softech Associate Panama City Beach, Florida, United States",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Software Engineer (Remote) Softech Associate",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Agentic Python Engineer Evaboot Remote, Remote/Worldwide, Remote/Worldwide",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Backend Software Engineer (FastAPI) -Onsite in Katy, Texas Off Duty Management Katy, TX, United States",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "New Backend Software Engineer (FastAPI) -Onsite in Katy, Texas Off Duty Management",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Lead Python Backend Engineer Reef Technologies Warsaw (fully remote), Poland",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Lead Python Backend Engineer Reef Technologies",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Backend Engineer Reef Technologies Warsaw (fully remote), Poland",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Backend Engineer Reef Technologies",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Backend Engineer Constelli Signals Hyderabad, Telangana, India",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Backend Engineer Constelli Signals",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Full-Stack Engineer [Full Time; 100% remote; US-only] Hive Collective Anywhere, Anywhere, USA",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Full-Stack Engineer [Full Time; 100% remote; US-only] Hive Collective",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Developer Micro1 Miami Shores, FL, United States",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Developer Micro1",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Engineer EPAM Miami Shores, FL, United States",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Engineer EPAM",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Engineer Turing Miami Shores, FL, United States",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Engineer Turing",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python/DevOps Engineer (100% Remote - USA Only) Six Feet Up 100% Remote, USA Only",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python/DevOps Engineer (100% Remote - USA Only) Six Feet Up",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python + TypeScript Engineers Fusionbox Remote (US Based), Any US State, US",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python + TypeScript Engineers Fusionbox",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior AI-Augmented Full Stack Developer SureSwift Capital Victoria, Canada",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior AI-Augmented Full Stack Developer SureSwift Capital",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Backend Python Engineer mindIT HR Agency (on behalf of a confidential client) Remote, Argentina",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Backend Python Engineer mindIT HR Agency (on behalf of a confidential client)",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Full-Stack Engineer AIDAR Hamburg, Germany",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Full-Stack Engineer AIDAR",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Engineer EPAM Worldwide, Worldwide, Worldwide",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Computational Photonics Engineer LumiAIres Ltd Glasgow, Scotland, United Kingdom",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Computational Photonics Engineer LumiAIres Ltd",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Developer Turing Remote, Remote, Remote",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Senior Python Developer Turing",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Machine Learning Engineer Turing Remote, Remote, Remote",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python Machine Learning Engineer Turing",
-        "source_type": "html_brand_element",
-        "source_quality": 0.75
-      },
-      {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/problems",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/jobs/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/topics",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/community/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/topics",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/community/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/interview-experiences",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/community/irc/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/interview-experiences",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/community/irc/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/mock-oa",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/source/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/mock-oa",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/source/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/placement-prep",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/windows/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/placement-prep",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/windows/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/assessment-mode",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/macos/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/assessment-mode",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/macos/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-insights",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/android/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-insights",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/android/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/premium",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/downloads/ios/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/premium",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/downloads/ios/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/terms-of-service",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/download/other/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/terms-of-service",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/download/other/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/privacy-policy",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/download/alternatives/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/privacy-policy",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/download/alternatives/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/refund-policy",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/doc/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/refund-policy",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/doc/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/amazon",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/doc/av/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/amazon",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/doc/av/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/american-express",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/doc/essays/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/american-express",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/doc/essays/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/arista",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/community/diversity/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/arista",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/community/diversity/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/community/lists/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/community/lists/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/tesco9sep",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/community/forums/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/tesco9sep",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
+        "source_quality": 0.85
       },
       {
-        "page": "https://www.python.org/community/forums/",
-        "raw_value": "python™",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "page": "https://www.oahelper.in/company-questions/squadstackai",
+        "raw_value": "OAHelper",
+        "source_type": "json_ld",
+        "source_quality": 1.0
       },
       {
-        "page": "https://www.python.org/psf/annual-report/2024/",
-        "raw_value": "Python.org",
+        "page": "https://www.oahelper.in/company-questions/squadstackai",
+        "raw_value": "OAHelper",
         "source_type": "html_og_site_name",
-        "source_quality": 0.65
-      },
-      {
-        "page": "https://www.python.org/psf/annual-report/2024/",
-        "raw_value": "Python Software Foundation",
-        "source_type": "html_logo_alt",
-        "source_quality": 0.4
+        "source_quality": 0.85
       }
     ],
-    "details": "Different trusted normalized name values were found: python.org, new agentic python engineer evaboot remote, remote/worldwide, remote/worldwide, remote, new agentic python engineer evaboot, developer / engineer, new software engineer raven technologies group remote, united states of america, new software engineer raven technologies group, new senior python developer adzuna remote (within 2 hours of london timezone), remote, new senior python developer adzuna, new agentic python engineer evaboot remote, remote, worldwide, new python developer eleks poland, lviv, ivano-frankivsk, ternopil, uzhhorod, chernivtsi or kyiv, ukraine/poland, new python developer eleks, new python/devops engineer nordvpn/nordsecurity vilnius / kaunas / warsaw, lithuania/poland, new python/devops engineer nordvpn/nordsecurity, new software engineer (remote) softech associate panama city beach, florida, united states, new software engineer (remote) softech associate, new agentic python engineer evaboot remote, remote/worldwide, remote/worldwide, new backend software engineer (fastapi) -onsite in katy, texas off duty management katy, tx, united states, new backend software engineer (fastapi) -onsite in katy, texas off duty management, lead python backend engineer reef technologies warsaw (fully remote), poland, lead python backend engineer reef technologies, senior python backend engineer reef technologies warsaw (fully remote), poland, senior python backend engineer reef technologies, python backend engineer constelli signals hyderabad, telangana, india, python backend engineer constelli signals, senior full-stack engineer [full time; 100% remote; us-only] hive collective anywhere, anywhere, usa, senior full-stack engineer [full time; 100% remote; us-only] hive collective, python developer micro1 miami shores, fl, united states, python developer micro1, senior python engineer epam miami shores, fl, united states, senior python engineer epam, senior python engineer turing miami shores, fl, united states, senior python engineer turing, senior python/devops engineer (100% remote - usa only) six feet up 100% remote, usa only, senior python/devops engineer (100% remote - usa only) six feet up, python + typescript engineers fusionbox remote (us based), any us state, us, python + typescript engineers fusionbox, senior ai-augmented full stack developer sureswift capital victoria, canada, senior ai-augmented full stack developer sureswift capital, senior backend python engineer mindit hr agency (on behalf of a confidential client) remote, argentina, senior backend python engineer mindit hr agency (on behalf of a confidential client, full-stack engineer aidar hamburg, germany, full-stack engineer aidar, senior python engineer epam worldwide, worldwide, worldwide, computational photonics engineer lumiaires glasgow, scotland, united kingdom, computational photonics engineer lumiaires, senior python developer turing remote, remote, remote, senior python developer turing, python machine learning engineer turing remote, remote, remote, python machine learning engineer turing."
+    "details": "All trusted name occurrences normalize to the same value."
   },
   {
     "field": "address",
@@ -748,12 +352,193 @@
   },
   {
     "field": "phone",
-    "pages_compared": [],
-    "values": [],
-    "normalized_values": [],
-    "confidence": 0.0,
-    "verdict": "not_found",
-    "evidence": [],
-    "details": "No phone value was found."
+    "pages_compared": [
+      "https://www.oahelper.in",
+      "https://www.oahelper.in/contact",
+      "https://www.oahelper.in/oa-calendar",
+      "https://www.oahelper.in/trust-oahelper",
+      "https://www.oahelper.in/company-questions/accenture",
+      "https://www.oahelper.in/company-questions/cmart",
+      "https://www.oahelper.in/contribute",
+      "https://www.oahelper.in/companies",
+      "https://www.oahelper.in/problems",
+      "https://www.oahelper.in/topics",
+      "https://www.oahelper.in/interview-experiences",
+      "https://www.oahelper.in/mock-oa",
+      "https://www.oahelper.in/placement-prep",
+      "https://www.oahelper.in/assessment-mode",
+      "https://www.oahelper.in/company-insights",
+      "https://www.oahelper.in/premium",
+      "https://www.oahelper.in/terms-of-service",
+      "https://www.oahelper.in/privacy-policy",
+      "https://www.oahelper.in/refund-policy",
+      "https://www.oahelper.in/company-questions/amazon",
+      "https://www.oahelper.in/company-questions/american-express",
+      "https://www.oahelper.in/company-questions/arista",
+      "https://www.oahelper.in/company-questions/arpwood-capital",
+      "https://www.oahelper.in/company-questions/tesco9sep",
+      "https://www.oahelper.in/company-questions/squadstackai"
+    ],
+    "values": [
+      "919274985691"
+    ],
+    "normalized_values": [
+      "919274985691"
+    ],
+    "confidence": 0.74,
+    "verdict": "consistent",
+    "evidence": [
+      {
+        "page": "https://www.oahelper.in",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/contact",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/oa-calendar",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/trust-oahelper",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/accenture",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/cmart",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/contribute",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/companies",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/problems",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/topics",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/interview-experiences",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/mock-oa",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/placement-prep",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/assessment-mode",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-insights",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/premium",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/terms-of-service",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/privacy-policy",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/refund-policy",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/amazon",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/american-express",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/arista",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/tesco9sep",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://www.oahelper.in/company-questions/squadstackai",
+        "raw_value": "919274985691",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      }
+    ],
+    "details": "All trusted phone occurrences resolve to the same number."
   }
 ]

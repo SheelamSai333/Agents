@@ -37,13 +37,22 @@ class ConfidenceScorer:
 
         page_priority = sum(priority_values) / len(priority_values)
 
-        normalized_values = {
-            occurrence.normalized_value
-            for occurrence in occurrences
-            if occurrence.normalized_value
-        }
-
-        agreement = 1.0 if len(normalized_values) <= 1 else 0.0
+        if any(occurrence.field == "phone" for occurrence in occurrences):
+            from nap_checker.comparison_engine import _canonicalize_phone_values
+            raw_norm = list(dict.fromkeys(
+                occ.normalized_value
+                for occ in occurrences
+                if occ.normalized_value
+            ))
+            canon_norm = _canonicalize_phone_values(raw_norm)
+            agreement = 1.0 if len(canon_norm) <= 1 else 0.0
+        else:
+            normalized_values = {
+                occurrence.normalized_value
+                for occurrence in occurrences
+                if occurrence.normalized_value
+            }
+            agreement = 1.0 if len(normalized_values) <= 1 else 0.0
 
         score = (
             source_quality * 0.35
