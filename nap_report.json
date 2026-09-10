@@ -1,0 +1,225 @@
+[
+  {
+    "field": "name",
+    "pages_compared": [
+      "https://ventrivo.vercel.app/",
+      "https://ventrivo.vercel.app/careers",
+      "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "https://ventrivo.vercel.app/projects/harsha-venture",
+      "https://ventrivo.vercel.app/privacy",
+      "https://ventrivo.vercel.app/terms"
+    ],
+    "values": [
+      "Modern Luxury Real Estate",
+      "Ventrivo",
+      "Ventrivo Real Estate"
+    ],
+    "normalized_values": [
+      "modern luxury real estate",
+      "ventrivo",
+      "ventrivo real estate"
+    ],
+    "confidence": 0.56,
+    "verdict": "consistent",
+    "evidence": [
+      {
+        "page": "https://ventrivo.vercel.app/",
+        "raw_value": "Modern Luxury Real Estate",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      },
+      {
+        "page": "https://ventrivo.vercel.app/careers",
+        "raw_value": "Ventrivo",
+        "source_type": "html_og_site_name",
+        "source_quality": 0.65
+      },
+      {
+        "page": "https://ventrivo.vercel.app/careers",
+        "raw_value": "Ventrivo Real Estate",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+        "raw_value": "Ventrivo",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+        "raw_value": "Ventrivo",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      },
+      {
+        "page": "https://ventrivo.vercel.app/privacy",
+        "raw_value": "Ventrivo",
+        "source_type": "html_og_site_name",
+        "source_quality": 0.65
+      },
+      {
+        "page": "https://ventrivo.vercel.app/privacy",
+        "raw_value": "Ventrivo Real Estate",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      },
+      {
+        "page": "https://ventrivo.vercel.app/terms",
+        "raw_value": "Ventrivo",
+        "source_type": "html_og_site_name",
+        "source_quality": 0.65
+      },
+      {
+        "page": "https://ventrivo.vercel.app/terms",
+        "raw_value": "Ventrivo Real Estate",
+        "source_type": "html_title",
+        "source_quality": 0.3
+      }
+    ],
+    "details": "All trusted name occurrences normalize to the same value."
+  },
+  {
+    "field": "address",
+    "pages_compared": [],
+    "values": [],
+    "normalized_values": [],
+    "confidence": 0.0,
+    "verdict": "not_found",
+    "evidence": [],
+    "details": "No address value was found."
+  },
+  {
+    "field": "phone",
+    "pages_compared": [
+      "https://ventrivo.vercel.app/",
+      "https://ventrivo.vercel.app/careers",
+      "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "https://ventrivo.vercel.app/projects/harsha-venture",
+      "https://ventrivo.vercel.app/privacy",
+      "https://ventrivo.vercel.app/terms"
+    ],
+    "values": [
+      "+919652776025",
+      "+91 9652776025",
+      "9652776025"
+    ],
+    "normalized_values": [
+      "919652776025",
+      "9652776025"
+    ],
+    "confidence": 0.63,
+    "verdict": "consistent",
+    "evidence": [
+      {
+        "page": "https://ventrivo.vercel.app/",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/careers",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/careers",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/careers",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/privacy",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/privacy",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/privacy",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/terms",
+        "raw_value": "+919652776025",
+        "source_type": "html_tel_link",
+        "source_quality": 0.85
+      },
+      {
+        "page": "https://ventrivo.vercel.app/terms",
+        "raw_value": "+91 9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      },
+      {
+        "page": "https://ventrivo.vercel.app/terms",
+        "raw_value": "9652776025",
+        "source_type": "html_phone_pattern",
+        "source_quality": 0.5
+      }
+    ],
+    "details": "All trusted phone occurrences resolve to the same number."
+  }
+]

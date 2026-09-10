@@ -1,0 +1,207 @@
+{
+  "total_crawled_pages": 6,
+  "total_findings": 25,
+  "duration_seconds": 24.27,
+  "severity_breakdown": {
+    "critical": 0,
+    "high": 5,
+    "medium": 18,
+    "low": 2,
+    "info": 0
+  },
+  "metric_breakdown": {
+    "missing_canonical": 6,
+    "duplicate_meta_description": 4,
+    "heading_hierarchy_skipped": 4,
+    "duplicate_title": 3,
+    "title_too_short": 3,
+    "missing_meta_description": 2,
+    "missing_open_graph": 2,
+    "thin_content": 1
+  },
+  "crawled_urls": [
+    "https://ventrivo.vercel.app/",
+    "https://ventrivo.vercel.app/careers",
+    "https://ventrivo.vercel.app/projects/ugadi-ventures",
+    "https://ventrivo.vercel.app/projects/harsha-venture",
+    "https://ventrivo.vercel.app/privacy",
+    "https://ventrivo.vercel.app/terms"
+  ],
+  "findings": [
+    {
+      "metric": "duplicate_title",
+      "page": "https://ventrivo.vercel.app/careers",
+      "severity": "high",
+      "evidence": "Duplicate title 'ventrivo | ventrivo real estate' shared across 3 pages: https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Ensure each page has a unique, distinct title tag reflecting its specific topic and purpose."
+    },
+    {
+      "metric": "duplicate_title",
+      "page": "https://ventrivo.vercel.app/privacy",
+      "severity": "high",
+      "evidence": "Duplicate title 'ventrivo | ventrivo real estate' shared across 3 pages: https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Ensure each page has a unique, distinct title tag reflecting its specific topic and purpose."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "duplicate_title",
+      "page": "https://ventrivo.vercel.app/terms",
+      "severity": "high",
+      "evidence": "Duplicate title 'ventrivo | ventrivo real estate' shared across 3 pages: https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Ensure each page has a unique, distinct title tag reflecting its specific topic and purpose."
+    },
+    {
+      "metric": "duplicate_meta_description",
+      "page": "https://ventrivo.vercel.app/",
+      "severity": "medium",
+      "evidence": "Duplicate meta description 'premium real estate developments across prime locations. experience modern lu...' shared across 4 pages: https://ventrivo.vercel.app/, https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://ventrivo.vercel.app/",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"font-playfair font-bold text-sm sm:text-lg md:text-xl text-gray-90...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://ventrivo.vercel.app/",
+      "severity": "medium",
+      "evidence": "Title has only 25 characters: 'Modern Luxury Real Estate' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "duplicate_meta_description",
+      "page": "https://ventrivo.vercel.app/careers",
+      "severity": "medium",
+      "evidence": "Duplicate meta description 'premium real estate developments across prime locations. experience modern lu...' shared across 4 pages: https://ventrivo.vercel.app/, https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://ventrivo.vercel.app/careers",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"text-2xl font-bold text-gray-900\">Purpose</h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/careers",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "duplicate_meta_description",
+      "page": "https://ventrivo.vercel.app/privacy",
+      "severity": "medium",
+      "evidence": "Duplicate meta description 'premium real estate developments across prime locations. experience modern lu...' shared across 4 pages: https://ventrivo.vercel.app/, https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/privacy",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h4> without an intervening <h2>: '<h4 class=\"text-xl sm:text-2xl md:text-3xl font-playfair mb-0\">Get Route to T...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "thin_content",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "medium",
+      "evidence": "Page contains only 189 visible words (recommended minimum: 200 words). Sample: 'VEN TRIVO Crafting Legacies harsha ventures Ventrivo Ongoing Project harsha ventures Bethamcherla Kurnool Preparing Venture Layout Get Route to This Venture From your location to harsha ventures Enter Your Starting Location Auto Route from My Location Show Route Google Maps...'",
+      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "medium",
+      "evidence": "Title has only 26 characters: 'harsha ventures | Ventrivo' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h4> without an intervening <h2>: '<h4 class=\"text-xl sm:text-2xl md:text-3xl font-playfair mb-0\">Get Route to T...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "severity": "medium",
+      "evidence": "Title has only 25 characters: 'Ugadi Ventures | Ventrivo' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "duplicate_meta_description",
+      "page": "https://ventrivo.vercel.app/terms",
+      "severity": "medium",
+      "evidence": "Duplicate meta description 'premium real estate developments across prime locations. experience modern lu...' shared across 4 pages: https://ventrivo.vercel.app/, https://ventrivo.vercel.app/careers, https://ventrivo.vercel.app/privacy, https://ventrivo.vercel.app/terms.",
+      "suggested_fix": "Create distinct, custom meta descriptions for each individual page instead of repeating boilerplates."
+    },
+    {
+      "metric": "missing_canonical",
+      "page": "https://ventrivo.vercel.app/terms",
+      "severity": "medium",
+      "evidence": "No <link rel=\"canonical\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a self-referential or authoritative <link rel=\"canonical\" href=\"...\"> in <head> to prevent duplicate content issues."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://ventrivo.vercel.app/projects/harsha-venture",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:title', 'og:description', 'og:image', 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://ventrivo.vercel.app/projects/ugadi-ventures",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:title', 'og:description', 'og:image', 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    }
+  ]
+}
