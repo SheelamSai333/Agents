@@ -1,562 +1,1459 @@
 {
   "total_crawled_pages": 25,
-  "total_findings": 73,
-  "duration_seconds": 39.89,
+  "total_findings": 200,
+  "duration_seconds": 250.79,
   "severity_breakdown": {
-    "critical": 1,
-    "high": 2,
-    "medium": 45,
-    "low": 25,
+    "critical": 10,
+    "high": 26,
+    "medium": 51,
+    "low": 113,
     "info": 0
   },
   "metric_breakdown": {
-    "empty_anchor_text": 25,
-    "heading_hierarchy_skipped": 15,
-    "title_too_short": 12,
-    "thin_content": 9,
-    "meta_description_too_long": 8,
-    "multiple_h1": 2,
-    "robots_noindex": 1,
-    "title_too_long": 1
+    "missing_href": 75,
+    "heading_hierarchy_skipped": 21,
+    "empty_anchor_text": 21,
+    "missing_open_graph": 17,
+    "missing_image_alt": 14,
+    "broken_image": 10,
+    "title_too_short": 10,
+    "robots_noindex": 9,
+    "missing_meta_description": 8,
+    "multiple_h1": 4,
+    "meta_description_too_long": 3,
+    "broken_internal_link": 2,
+    "missing_h1": 2,
+    "thin_content": 2,
+    "http_client_error": 1,
+    "meta_description_too_short": 1
   },
   "crawled_urls": [
-    "https://www.oahelper.in",
-    "https://www.oahelper.in/contribute",
-    "https://www.oahelper.in/companies",
-    "https://www.oahelper.in/problems",
-    "https://www.oahelper.in/topics",
-    "https://www.oahelper.in/interview-experiences",
-    "https://www.oahelper.in/mock-oa",
-    "https://www.oahelper.in/placement-prep",
-    "https://www.oahelper.in/assessment-mode",
-    "https://www.oahelper.in/oa-calendar",
-    "https://www.oahelper.in/company-insights",
-    "https://www.oahelper.in/premium",
-    "https://www.oahelper.in/terms-of-service",
-    "https://www.oahelper.in/privacy-policy",
-    "https://www.oahelper.in/refund-policy",
-    "https://www.oahelper.in/trust-oahelper",
-    "https://www.oahelper.in/contact",
-    "https://www.oahelper.in/company-questions/accenture",
-    "https://www.oahelper.in/company-questions/amazon",
-    "https://www.oahelper.in/company-questions/american-express",
-    "https://www.oahelper.in/company-questions/arista",
-    "https://www.oahelper.in/company-questions/arpwood-capital",
-    "https://www.oahelper.in/company-questions/tesco9sep",
-    "https://www.oahelper.in/company-questions/squadstackai",
-    "https://www.oahelper.in/company-questions/cmart"
+    "https://www.ccbp.in/",
+    "https://www.ccbp.in/academy",
+    "https://www.ccbp.in/intensive",
+    "https://www.ccbp.in/reviews",
+    "https://www.ccbp.in/hire",
+    "https://www.ccbp.in/intensive-old-before-sep-10-2026",
+    "https://www.ccbp.in/about-us#about-us-investor-section",
+    "https://www.ccbp.in/contact-us",
+    "https://www.ccbp.in/blog",
+    "https://www.ccbp.in/our-tech",
+    "https://www.ccbp.in/careers",
+    "https://www.ccbp.in/tech-community",
+    "https://www.ccbp.in/4-0-champions",
+    "https://www.ccbp.in/llm-info",
+    "https://www.ccbp.in/privacy-policy",
+    "https://www.ccbp.in/cookie-policy",
+    "https://www.ccbp.in/terms-and-conditions",
+    "https://www.ccbp.in/grievance-redressal",
+    "https://www.ccbp.in/corporate-information",
+    "https://www.ccbp.in/vision-and-values",
+    "https://www.ccbp.in/csr-policy",
+    "https://www.ccbp.in/intensive/software-training-institute",
+    "https://www.ccbp.in/intensive/mern-stack-developer-course",
+    "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+    "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore"
   ],
   "findings": [
     {
       "metric": "robots_noindex",
-      "page": "https://www.oahelper.in/company-questions/tesco9sep",
+      "page": "https://www.ccbp.in/4-0-champions",
       "severity": "critical",
-      "evidence": "<meta name=\"robots\" content=\"noindex, nofollow\"> contains 'noindex', preventing search engines from indexing this page.",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
       "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
     },
     {
-      "metric": "multiple_h1",
-      "page": "https://www.oahelper.in/assessment-mode",
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/cookie-policy",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/corporate-information",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/csr-policy",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/grievance-redressal",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "http_client_error",
+      "page": "https://www.ccbp.in/intensive-old-before-sep-10-2026",
+      "severity": "critical",
+      "evidence": "Client request returned HTTP status 404 (Not Found).",
+      "suggested_fix": "Ensure the URL exists or return a proper 301 redirect to the updated location."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/terms-and-conditions",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "robots_noindex",
+      "page": "https://www.ccbp.in/vision-and-values",
+      "severity": "critical",
+      "evidence": "<meta name=\"robots\" content=\"noindex\"> contains 'noindex', preventing search engines from indexing this page.",
+      "suggested_fix": "Remove the 'noindex' directive from the robots meta tag if this page should appear in search results."
+    },
+    {
+      "metric": "broken_internal_link",
+      "page": "https://www.ccbp.in/",
       "severity": "high",
-      "evidence": "Found 2 <h1> elements: '<h1>Assessment Mode - Companies with Timed OA Practice</h1>', '<h1 class=\"text-5xl md:text-7xl font-medium tracking-tigh...'.",
+      "evidence": "Internal link '<a class=\"booka-a-free-popup track-button w-inline-block\" href=\"/intensive-ol...' pointing to 'https://www.ccbp.in/intensive-old-before-sep-10-2026' (href='/intensive-old-before-sep-10-2026') returned HTTP status 404.",
+      "suggested_fix": "Update or remove the broken internal link pointing to HTTP 404 page."
+    },
+    {
+      "metric": "multiple_h1",
+      "page": "https://www.ccbp.in/about-us#about-us-investor-section",
+      "severity": "high",
+      "evidence": "Found 2 <h1> elements: '<h1 class=\"heading-68\"><strong class=\"bold-text-110\">Foun...', '<h1 class=\"heading-68\">Advisor<br/></h1>'.",
       "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
     },
     {
       "metric": "multiple_h1",
-      "page": "https://www.oahelper.in/problems",
+      "page": "https://www.ccbp.in/careers",
       "severity": "high",
-      "evidence": "Found 2 <h1> elements: '<h1 class=\"text-2xl font-bold tracking-tight text-white s...', '<h1 class=\"text-[22px] font-semibold tracking-tight\">Prob...'.",
+      "evidence": "Found 3 <h1> elements: '<h1 class=\"heading-3671034\">build Careers<br/>While you <...', '<h1 class=\"heading-3671037\">when you need a dose of Inspi...', '<h1 class=\"heading-3671075\">Now a little <span class=\"tex...'.",
       "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
     },
     {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in",
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/contact-us",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-we...' with source 'https://d14qv6cm1t62pm.cloudfront.net/ccbp-websitecontact-us/location-icon.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/cookie-policy",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/corporate-information",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/csr-policy",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/grievance-redressal",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_h1",
+      "page": "https://www.ccbp.in/llm-info",
+      "severity": "high",
+      "evidence": "Found 0 <h1> elements in the document.",
+      "suggested_fix": "Add a single, descriptive <h1> element representing the main topic of the page."
+    },
+    {
+      "metric": "missing_h1",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "high",
+      "evidence": "Found 0 <h1> elements in the document.",
+      "suggested_fix": "Add a single, descriptive <h1> element representing the main topic of the page."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "multiple_h1",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "high",
+      "evidence": "Found 2 <h1> elements: '<h1 class=\"medium-heading career-description-heading\">Pri...', '<h1><strong>Cookie Notice<br/></strong></h1>'.",
+      "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" loading=\"\" src=\"https://cdn.prod.website-files.com/615dca66d4ca6a...' with source 'https://cdn.prod.website-files.com/615dca66d4ca6ac30a6860f9/6235ea3f4e64f995c3e693fe_Yalla%20Sivaram.png' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"image-299\" loading=\"lazy\" src=\"https://cdn.prod.website-fi...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/6149b65f454978509dedd037_Frame%207158.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"academy-white-logo\" loading=\"lazy\" src=\"https://cdn.prod.w...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/614abfa9afdf565fa2e30df3_Icon%20%2B%20Text.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"image-299\" loading=\"lazy\" src=\"https://cdn.prod.website-fi...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/6149b65f19903065c56bb61e_Frame%201%20(3).svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"intensive-white-logo\" loading=\"lazy\" src=\"https://cdn.prod...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/614ac04c36d812d1c7b0bf56_Icon%20%2B%20Text.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"image-299\" loading=\"lazy\" src=\"https://cdn.prod.website-fi...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/6149b606675d9f550c17d2ef_CCBP%20Professional_Color.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"professional-white-logo\" loading=\"lazy\" src=\"https://cdn.p...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/614ac0d8e3bfcb81bb162ce1_Frame%207168.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"image-299\" loading=\"lazy\" src=\"https://cdn.prod.website-fi...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/6149b606bde7771aabe240ec_CCBP%20Foundations.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_image",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Image '<img alt=\"\" class=\"foundations-white-logo\" loading=\"lazy\" src=\"https://cdn.pr...' with source 'https://cdn.prod.website-files.com/614023a4141c5aa03a14e7b0/614ac10d9cc83775e12cfa10_Frame%207168.svg' returned HTTP 403.",
+      "suggested_fix": "Fix or remove the broken image source URL."
+    },
+    {
+      "metric": "broken_internal_link",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "high",
+      "evidence": "Internal link '<a class=\"booka-a-free-popup track-button w-inline-block\" href=\"/intensive-ol...' pointing to 'https://www.ccbp.in/intensive-old-before-sep-10-2026' (href='/intensive-old-before-sep-10-2026') returned HTTP status 404.",
+      "suggested_fix": "Update or remove the broken internal link pointing to HTTP 404 page."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/terms-and-conditions",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "missing_meta_description",
+      "page": "https://www.ccbp.in/vision-and-values",
+      "severity": "high",
+      "evidence": "No <meta name=\"description\"> tag was found in the HTML <head>.",
+      "suggested_fix": "Add a compelling, unique meta description between 70 and 160 characters in the HTML <head>."
+    },
+    {
+      "metric": "multiple_h1",
+      "page": "https://www.ccbp.in/vision-and-values",
+      "severity": "high",
+      "evidence": "Found 2 <h1> elements: '<h1 class=\"vision-and-value-page-heading\">Vision Statemen...', '<h1 class=\"vision-and-value-page-heading\">Value Statement...'.",
+      "suggested_fix": "Structure the page with exactly one primary <h1> and use <h2>/<h3> for subsections."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/",
       "severity": "medium",
-      "evidence": "Page contains only 183 visible words (recommended minimum: 200 words). Sample: 'NEW Company wise online assessment practice Practice What Companies Actually Ask Practice company wise online assessment questions strengthen your coding skills and learn from interview experiences shared by other candidates Start Practicing Tracked Companies Our Students Have Been Placed At...'",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"heading-364\">LEARN THE BEST FROM THE ALUMNI OF</h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/",
+      "severity": "medium",
+      "evidence": "Found 8 <img> element(s) missing an 'alt' attribute: '<img src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-website/Home/a...', '<img alt-text=\"Greatest Brand in Education\" src=\"https://d14qv6cm1t...', '<img loading=\"Greatest Brand in Education\" src=\"https://d14qv6cm1t6...' (and 5 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/4-0-champions",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"accordion-heading-4\"><strong class=\"bold-text-6\">Who can apply?<br...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/4-0-champions",
+      "severity": "medium",
+      "evidence": "Found 1 <img> element(s) missing an 'alt' attribute: '<img height=\"48\" loading=\"lazy\" src=\"https://cdn.prod.website-files...'.",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/about-us#about-us-investor-section",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"heading-3670889\">Best Tech Skilling EdTech Company of the year 202...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/about-us#about-us-investor-section",
+      "severity": "medium",
+      "evidence": "Found 20 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...' (and 17 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/about-us#about-us-investor-section",
+      "severity": "medium",
+      "evidence": "Title has only 29 characters: 'about us | NxtWave | CCBP 4.0' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"academy-h2s-48\">Go Beyond Coding! <br/>Learn Programming with Our ...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "medium",
+      "evidence": "Found 6 <img> element(s) missing an 'alt' attribute: '<img src=\"https://cdn.prod.website-files.com/5fa61cbbf0d432b3230f62...', '<img loading=\"lazy\" src=\"https://cdn.prod.website-files.com/5fa61cb...', '<img height=\"112px\" loading=\"lazy\" src=\"https://cdn.prod.website-fi...' (and 3 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/blog",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h4> without an intervening <h2>: '<h4 class=\"heading-3671182\">NxtWave Academy Fees, Scholarships &amp; EMI Expl...'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/blog",
+      "severity": "medium",
+      "evidence": "Found 20 <img> element(s) missing an 'alt' attribute: '<img loading=\"\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-web...', '<img height=\"100%\" onerror=\"this.remove();\" src=\"\" width=\"100%\"/>', '<img height=\"100%\" onerror=\"this.remove();\" src=\"\" width=\"100%\"/>' (and 17 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/careers",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/careers",
+      "severity": "medium",
+      "evidence": "Found 3 <img> element(s) missing an 'alt' attribute: '<img height=\"40\" loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfr...', '<img height=\"40\" loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfr...', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...'.",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "meta_description_too_short",
+      "page": "https://www.ccbp.in/contact-us",
+      "severity": "medium",
+      "evidence": "Meta description contains only 55 characters: 'For any queries, please mail us at support@nxtwave.tech' (recommended minimum is 70).",
+      "suggested_fix": "Expand the meta description to at least 70 characters to encourage click-throughs from SERPs."
+    },
+    {
+      "metric": "thin_content",
+      "page": "https://www.ccbp.in/contact-us",
+      "severity": "medium",
+      "evidence": "Page contains only 70 visible words (recommended minimum: 200 words). Sample: 'Get In Touch At NxtWave we transform individuals into highly skilled tech professionals Reach Us For Student Program Queries 91 9390111761 WhatsApp only support nxtwave tech For Hiring CCBP Learners hiring nxtwave tech For Media Enquiry media nxtwave tech Address...'",
       "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
     },
     {
       "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/assessment-mode",
+      "page": "https://www.ccbp.in/cookie-policy",
       "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-2xl font-medium text-white tracking-tight leading-tight trunc...'.",
+      "evidence": "Heading hierarchy skips from <h1> to <h6> without an intervening <h2>: '<h6> Policy Summary</h6>'.",
       "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
     },
     {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/assessment-mode",
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/cookie-policy",
       "severity": "medium",
-      "evidence": "Meta description contains 188 characters: 'Take real-time, timed company assessments on OAHelper. Pick a company, get a 60 or 90 minute timer, and finish with an instant report card. Companies without MCQ questions are listed here.' (exceeds recommended 160 characters max).",
+      "evidence": "Title has only 13 characters: 'Cookie Policy' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/corporate-information",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h6> without an intervening <h2>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/corporate-information",
+      "severity": "medium",
+      "evidence": "Title has only 21 characters: 'Corporate information' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/csr-policy",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h4> without an intervening <h2>: '<h4><strong>1. INTRODUCTION</strong></h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/csr-policy",
+      "severity": "medium",
+      "evidence": "Title has only 10 characters: 'CSR Policy' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/grievance-redressal",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h6> without an intervening <h2>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/grievance-redressal",
+      "severity": "medium",
+      "evidence": "Title has only 19 characters: 'Grievance Redressal' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/hire",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h4> to <h6> without an intervening <h5>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h5> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/hire",
+      "severity": "medium",
+      "evidence": "Found 6 <img> element(s) missing an 'alt' attribute: '<img src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-website/Hire/h...', '<img src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-website/Hire/l...', '<img src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-website/hire-I...' (and 3 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-8\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "medium",
+      "evidence": "Found 1 <img> element(s) missing an 'alt' attribute: '<img at=\"email\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-web...'.",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"faq-q-h-y-3\">Build Your Own Static Website</h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "medium",
+      "evidence": "Found 41 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"\"/>', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img class=\"skills-tools-logo\" loading=\"lazy\" src=\"https://d14qv6cm...' (and 38 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"faq-q-h-y-3\">Build Your Own Static Website</h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "meta_description_too_long",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "medium",
+      "evidence": "Meta description contains 163 characters: 'Join the best MERN Stack Course in Bangalore. Learn from industry experts, gain practical skills, and get placed in top companies with dedicated placement support.' (exceeds recommended 160 characters max).",
+      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "medium",
+      "evidence": "Found 35 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"\"/>', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img class=\"skills-tools-logo\" loading=\"lazy\" src=\"https://d14qv6cm...' (and 32 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h4> without an intervening <h3>: '<h4 class=\"faq-q-h-y-3\">Build Your Own Static Website</h4>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "medium",
+      "evidence": "Found 41 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"\"/>', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img class=\"skills-tools-logo\" loading=\"lazy\" src=\"https://d14qv6cm...' (and 38 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "meta_description_too_long",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "medium",
+      "evidence": "Meta description contains 169 characters: 'Join the best software training institute in Hyderabad with 2300+ hiring partners. Real-world projects, expert trainers & best placement support. Book a free demo today!' (exceeds recommended 160 characters max).",
+      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "medium",
+      "evidence": "Found 12 <img> element(s) missing an 'alt' attribute: '<img class=\"pricing-logos-post-paid\" src=\"https://d14qv6cm1t62pm.cl...', '<img src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp-website/intens...', '<img height=\"11\" src=\"https://assets-global.website-files.com/6413e...' (and 9 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "meta_description_too_long",
+      "page": "https://www.ccbp.in/llm-info",
+      "severity": "medium",
+      "evidence": "Meta description contains 163 characters: 'Structured information about NxtWave, intended for AI assistants such as ChatGPT, Claude, Perplexity, Bard, Gemini, Copilot, and other large language models (LLMs)' (exceeds recommended 160 characters max).",
       "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
     },
     {
       "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/companies",
+      "page": "https://www.ccbp.in/our-tech",
       "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"google-text text-[18px] font-semibold text-white tracking-[-0.2px]...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
+      "evidence": "Heading hierarchy skips from <h3> to <h6> without an intervening <h4>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h4> or change the heading tag."
     },
     {
       "metric": "title_too_short",
-      "page": "https://www.oahelper.in/companies",
+      "page": "https://www.ccbp.in/our-tech",
       "severity": "medium",
-      "evidence": "Title has only 20 characters: 'Companies | OAHelper' (recommended minimum is 30).",
+      "evidence": "Title has only 18 characters: 'OUR Tech Blog Home' (recommended minimum is 30).",
       "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
     },
     {
       "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-insights",
+      "page": "https://www.ccbp.in/privacy-policy",
       "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-3xl font-medium text-white mb-2 tracking-tight leading-tight ...'.",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "medium",
+      "evidence": "Title has only 14 characters: 'Privacy Policy' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "medium",
+      "evidence": "Found 136 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img data-test=\"user\" loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cl...', '<img class=\"review-cms-comapny-logos\" data-test=\"company\" loading=\"...' (and 133 more).",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "medium",
+      "evidence": "Title has only 26 characters: 'CCBP 4.0 Reviews | NxtWave' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h2> to <h6> without an intervening <h3>: '<h6 class=\"h6-small-2\">Reach Us</h6>'.",
+      "suggested_fix": "Maintain sequential heading levels; insert an <h3> or change the heading tag."
+    },
+    {
+      "metric": "missing_image_alt",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "medium",
+      "evidence": "Found 3 <img> element(s) missing an 'alt' attribute: '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img loading=\"lazy\" src=\"https://d14qv6cm1t62pm.cloudfront.net/ccbp...', '<img height=\"48\" loading=\"lazy\" src=\"https://cdn.prod.website-files...'.",
+      "suggested_fix": "Add descriptive 'alt' text to images for search indexing and screen reader accessibility."
+    },
+    {
+      "metric": "heading_hierarchy_skipped",
+      "page": "https://www.ccbp.in/terms-and-conditions",
+      "severity": "medium",
+      "evidence": "Heading hierarchy skips from <h1> to <h4> without an intervening <h2>: '<h4>26.<strong> </strong>CCBP Intensive Terms &amp; Conditions:</h4>'.",
       "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
     },
     {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-insights",
+      "metric": "title_too_short",
+      "page": "https://www.ccbp.in/terms-and-conditions",
       "severity": "medium",
-      "evidence": "Page contains only 78 visible words (recommended minimum: 200 words). Sample: 'Hot Aug 24 2026 amazon Amazon has 376 published OA questions on OAHelper Most reported topics Array Greedy Sorting Has 376 questions Aug 24 2026 Hot Aug 24 2026 blackrock Blackrock has 213 published OA questions on OAHelper Most reported...'",
+      "evidence": "Title has only 20 characters: 'Terms and Conditions' (recommended minimum is 30).",
+      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
+    },
+    {
+      "metric": "thin_content",
+      "page": "https://www.ccbp.in/vision-and-values",
+      "severity": "medium",
+      "evidence": "Page contains only 174 visible words (recommended minimum: 200 words). Sample: 'Vision Statement Building India Largest Online Employability Academy and creating million software developers every year Value Statement At NxtWave we believe in Integrity We are honest transparent and ethical in everything we do We hold ourselves accountable for our actions...'",
       "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
     },
     {
       "metric": "title_too_short",
-      "page": "https://www.oahelper.in/company-insights",
+      "page": "https://www.ccbp.in/vision-and-values",
       "severity": "medium",
-      "evidence": "Title has only 27 characters: 'Company Insights | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/accenture",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/company-questions/accenture",
-      "severity": "medium",
-      "evidence": "Meta description contains 164 characters: 'Accenture online assessment questions: practice 103+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/amazon",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/american-express",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/company-questions/american-express",
-      "severity": "medium",
-      "evidence": "Meta description contains 170 characters: 'American Express online assessment questions: practice 17+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-questions/american-express",
-      "severity": "medium",
-      "evidence": "Page contains only 152 visible words (recommended minimum: 200 words). Sample: 'All Companies American Express OA Questions 17 Questions Online Assessment Your progress 17 solved in this company complete 01 Minimal Cost of Cutting Chain Into Three Pieces Coding 02 Recover Two Row Binary Board From Its Sums Coding 03 Reduce...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/arista",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-questions/arista",
-      "severity": "medium",
-      "evidence": "Page contains only 105 visible words (recommended minimum: 200 words). Sample: 'All Companies Arista OA Questions 12 Questions Online Assessment Your progress 12 solved in this company complete 01 Minimum Edge Reversals to Root the Network Coding 02 Count Increasing Triplets Under Threshold Coding 03 Shortest Substring with Prefix and Suffix...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/arpwood-capital",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/company-questions/arpwood-capital",
-      "severity": "medium",
-      "evidence": "Meta description contains 169 characters: 'Arpwood Capital online assessment questions: practice 68+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/cmart",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-questions/cmart",
-      "severity": "medium",
-      "evidence": "Page contains only 127 visible words (recommended minimum: 200 words). Sample: 'All Companies CMART OA Questions 12 Questions Online Assessment Your progress 12 solved in this company complete 01 Grid Infection with Recovery After Days Coding 02 Grid Infection with Immune Cells Coding 03 Days Until an Eight Direction Infection Grid...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/squadstackai",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/company-questions/squadstackai",
-      "severity": "medium",
-      "evidence": "Meta description contains 166 characters: 'SquadStack.ai online assessment questions: practice 3+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-questions/squadstackai",
-      "severity": "medium",
-      "evidence": "Page contains only 48 visible words (recommended minimum: 200 words). Sample: 'All Companies SquadStack ai OA Questions Questions Online Assessment Your progress solved in this company complete 01 Sellers Who Out Earn Their Whole Marketplace SQL 02 Minimum Time Slots for Cloud Kitchen With Per Dish Cooldowns Coding 03 Fewest Die...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/company-questions/tesco9sep",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"min-w-0 text-[15px] sm:text-[17px] font-semibold leading-snug trun...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/company-questions/tesco9sep",
-      "severity": "medium",
-      "evidence": "Meta description contains 163 characters: 'Tesco_9sep online assessment questions: practice 1+ real OA questions with solutions, sample tests and interview tips on OAHelper. Coding, SQL, MCQ rounds covered.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/company-questions/tesco9sep",
-      "severity": "medium",
-      "evidence": "Page contains only 24 visible words (recommended minimum: 200 words). Sample: 'All Companies Tesco_9sep OA Questions Questions Online Assessment Your progress solved in this company complete 01 Cyclic Anticlockwise Rotation of Every Matrix Layer Coding...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/contact",
-      "severity": "medium",
-      "evidence": "Page contains only 76 visible words (recommended minimum: 200 words). Sample: 'Back Get in Touch Have questions about OAHelper Want to explore how it works for your college We re here to help Contact information Email shyam saktawat nxtwave co in Website www oahelper in Response time We usually respond within...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/contact",
-      "severity": "medium",
-      "evidence": "Title has only 21 characters: 'Contact Us | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/contribute",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"text-white font-medium\">Interview Reviews</h3>'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "thin_content",
-      "page": "https://www.oahelper.in/contribute",
-      "severity": "medium",
-      "evidence": "Page contains only 64 visible words (recommended minimum: 200 words). Sample: 'Community Powered For the Students By the Students With the Students Back to Home 00 Want to use without paying It totally possible with OACoins OACoin Interview Reviews 10 30 Coding DSA LLD experiences View Contribute Share OA Questions 20...'",
-      "suggested_fix": "Expand the page content with detailed, helpful copy (at least 200 words) to avoid thin content flags."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/contribute",
-      "severity": "medium",
-      "evidence": "Title has only 21 characters: 'Contribute | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/interview-experiences",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"truncate font-bold tracking-[-0.02em] text-white text-[17px]\">C DA...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/mock-oa",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"truncate text-[26px] font-bold leading-tight tracking-[-0.03em] te...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/mock-oa",
-      "severity": "medium",
-      "evidence": "Meta description contains 172 characters: 'Practice real company online assessments on OAHelper. Pick a company, take a timed full-screen Mock OA with coding and MCQ sections, and finish with an instant report card.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "title_too_long",
-      "page": "https://www.oahelper.in/mock-oa",
-      "severity": "medium",
-      "evidence": "Title contains 62 characters: 'Company Mock OAs - Timed Online Assessment Practice | OAHelper' (exceeds recommended 60 characters limit).",
-      "suggested_fix": "Shorten the title to under 60 characters to prevent truncation in Google SERPs."
-    },
-    {
-      "metric": "meta_description_too_long",
-      "page": "https://www.oahelper.in/placement-prep",
-      "severity": "medium",
-      "evidence": "Meta description contains 174 characters: 'A 9-week DSA roadmap covering 39 topics, following the bootcamp curriculum by WnCC, IIT Bombay. Theory first, then a practice set of real OA questions paced across each week.' (exceeds recommended 160 characters max).",
-      "suggested_fix": "Shorten the meta description to under 160 characters to prevent truncation in search snippets."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/placement-prep",
-      "severity": "medium",
-      "evidence": "Title has only 22 characters: 'DSA Roadmap | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "heading_hierarchy_skipped",
-      "page": "https://www.oahelper.in/premium",
-      "severity": "medium",
-      "evidence": "Heading hierarchy skips from <h1> to <h3> without an intervening <h2>: '<h3 class=\"mb-1.5 text-lg font-semibold tracking-[-0.015em] text-white md:mb-...'.",
-      "suggested_fix": "Maintain sequential heading levels; insert an <h2> or change the heading tag."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/premium",
-      "severity": "medium",
-      "evidence": "Title has only 24 characters: 'Premium Plans | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/privacy-policy",
-      "severity": "medium",
-      "evidence": "Title has only 25 characters: 'Privacy Policy | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/problems",
-      "severity": "medium",
-      "evidence": "Title has only 19 characters: 'Problems | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/refund-policy",
-      "severity": "medium",
-      "evidence": "Title has only 24 characters: 'Refund Policy | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/terms-of-service",
-      "severity": "medium",
-      "evidence": "Title has only 27 characters: 'Terms of Service | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/topics",
-      "severity": "medium",
-      "evidence": "Title has only 24 characters: 'Coding Topics | OAHelper' (recommended minimum is 30).",
-      "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
-    },
-    {
-      "metric": "title_too_short",
-      "page": "https://www.oahelper.in/trust-oahelper",
-      "severity": "medium",
-      "evidence": "Title has only 25 characters: 'Trust & Safety | OAHelper' (recommended minimum is 30).",
+      "evidence": "Title has only 27 characters: 'Vision and Values | Nxtwave' (recommended minimum is 30).",
       "suggested_fix": "Expand the title to at least 30 characters to provide richer context for search engines and users."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in",
+      "page": "https://www.ccbp.in/",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 3 internal link(s) with empty anchor text: '<a class=\"link-block-44 track-button w-inline-block\" href...', '<a class=\"intensive-link-block w-inline-block\" href=\"http...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-1 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link2 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link3 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link4 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link5 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link6 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link7 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link8 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link9 track-button online-tab w-inline-block w-tab-li...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link10 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link11 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link12 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link13 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link14 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link15 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link16 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link17 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link18 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link19 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link20 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link21 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link22 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link23 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link24 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link25 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link26 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link27 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link28 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link29 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link30 track-button online-tab w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/4-0-champions",
+      "severity": "low",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/4-0-champions",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/about-us#about-us-investor-section",
+      "severity": "low",
+      "evidence": "Found 4 internal link(s) with empty anchor text: '<a class=\"brand-5 w-nav-brand\" href=\"/\"><div class=\"html-...', '<a class=\"link-block-44 w-inline-block\" href=\"/academys-o...', '<a class=\"link-block-46 w-inline-block\" href=\"/intensive\"...' (and 1 more).",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/assessment-mode",
+      "page": "https://www.ccbp.in/academy",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/companies",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"fk-sa-tab-link track-button w-inline-block w-tab-link w--...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"fk-sa-tab-link track-button w-inline-block w-tab-link\" da...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"new-smart-genius-menu track-button w-inline-block w-tab-l...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-2-21 track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-2-21 track-button w-inline-block w-tab-link\"...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-item-aicareer track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-item-aicareer track-button w-inline-block w-tab-link\"...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"success-tab track-button w-inline-block w-tab-link w--cur...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"success-tab track-button w-inline-block w-tab-link\" data-...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"maang-tabs track-button w-inline-block w-tab-link w--curr...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"maang-tabs track-button w-inline-block w-tab-link\" data-w...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/academy",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-insights",
+      "page": "https://www.ccbp.in/blog",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 4 internal link(s) with empty anchor text: '<a class=\"navbar-brand track-button w-nav-brand\" href=\"ht...', '<a class=\"link-block-711 track-button w-inline-block\" hre...', '<a class=\"link-block-712 track-button w-inline-block\" hre...' (and 1 more).",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/accenture",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/blog",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:image', 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/amazon",
+      "page": "https://www.ccbp.in/careers",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/american-express",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/careers",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/arista",
+      "page": "https://www.ccbp.in/cookie-policy",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 2 internal link(s) with empty anchor text: '<a class=\"brand-5-copy w-nav-brand\" href=\"/\"><div class=\"...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/arpwood-capital",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/cookie-policy",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/cmart",
+      "page": "https://www.ccbp.in/corporate-information",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/squadstackai",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/corporate-information",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/company-questions/tesco9sep",
+      "page": "https://www.ccbp.in/csr-policy",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 2 internal link(s) with empty anchor text: '<a class=\"brand-5-copy w-nav-brand\" href=\"/\"><div class=\"...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/contact",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/csr-policy",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/contribute",
+      "page": "https://www.ccbp.in/grievance-redressal",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/interview-experiences",
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/grievance-redressal",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/mock-oa",
+      "page": "https://www.ccbp.in/hire",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/oa-calendar",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/hire",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab1 track-button w-node-_9288628b-99e9-6eff-a154-ee4...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/hire",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab1 track-button w-inline-block w-tab-link\" data-w-t...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/placement-prep",
+      "page": "https://www.ccbp.in/intensive",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 3 internal link(s) with empty anchor text: '<a aria-current=\"page\" class=\"brand-26 track-button w-nav...', '<a aria-current=\"page\" class=\"w-inline-block w--current\" ...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/premium",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive",
       "severity": "low",
-      "evidence": "Found 2 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tabs-for-recent-placed track-button w-inline-block w-tab-...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-1-29 track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-1-29 track-button w-inline-block w-tab-link\"...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"intensive-offline-faq-tabs-2 track-button w-inline-block ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/intensive",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/privacy-policy",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 8 internal link(s) with empty anchor text: '<a class=\"brand-logo track-class w-nav-brand\" href=\"https...', '<a href='class=\"\"' id=\"-course-curriculum\" style=\"display...', '<a href='class=\"\"' id=\"-tool-covered\" style=\"display:none...' (and 5 more).",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/problems",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
       "severity": "low",
-      "evidence": "Found 3 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper home\" href=\"/\"><img alt=\"OAHelper...', '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1-fundamental track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1 track-button w-inline-block w-tab-link\" data-w-tab=...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"online-tab-item w-inline-block w-tab-link\" data-w-tab=\"Ta...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"trainingcenter-tab-item w-inline-block w-tab-link w--curr...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link w--...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link\" da...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/refund-policy",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 8 internal link(s) with empty anchor text: '<a class=\"brand-logo track-class w-nav-brand\" href=\"https...', '<a href='class=\"\"' id=\"-course-curriculum\" style=\"display...', '<a href='class=\"\"' id=\"-tool-covered\" style=\"display:none...' (and 5 more).",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/terms-of-service",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
-      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1-fundamental track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1 track-button w-inline-block w-tab-link\" data-w-tab=...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link w--...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-bangalore",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link\" da...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
     },
     {
       "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/topics",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Found 8 internal link(s) with empty anchor text: '<a class=\"brand-logo track-class w-nav-brand\" href=\"https...', '<a href='class=\"\"' id=\"-course-curriculum\" style=\"display...', '<a href='class=\"\"' id=\"-tool-covered\" style=\"display:none...' (and 5 more).",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
     },
     {
-      "metric": "empty_anchor_text",
-      "page": "https://www.oahelper.in/trust-oahelper",
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
       "severity": "low",
-      "evidence": "Found 1 internal link(s) with empty anchor text: '<a aria-label=\"OAHelper - home\" class=\"inline-flex items-...'.",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1-fundamental track-button w-inline-block w-tab-link ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-1 track-button w-inline-block w-tab-link\" data-w-tab=...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"online-tab-item w-inline-block w-tab-link\" data-w-tab=\"Ta...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"trainingcenter-tab-item w-inline-block w-tab-link w--curr...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link w--...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/mern-stack-developer-course-in-hyderabad",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"faq-tab-link-y track-button w-inline-block w-tab-link\" da...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
       "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tabs-for-placed-students track-button w-inline-block w-ta...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"online-tab-item w-inline-block w-tab-link\" data-w-tab=\"Ta...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"trainingcenter-tab-item w-inline-block w-tab-link w--curr...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-2-18 w-inline-block w-tab-link w--current\" d...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-2-18 w-inline-block w-tab-link\" data-w-tab=\"...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/intensive/software-training-institute",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/llm-info",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:image', 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "low",
+      "evidence": "Found 2 internal link(s) with empty anchor text: '<a class=\"link-block-46 track-button w-inline-block\" href...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-1-21 w-inline-block w-tab-link w--current\" d...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-1-21 w-inline-block w-tab-link\" data-w-tab=\"...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/our-tech",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image', 'og:url'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "low",
+      "evidence": "Found 2 internal link(s) with empty anchor text: '<a class=\"brand-5-copy w-nav-brand\" href=\"/\"><div class=\"...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/privacy-policy",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "low",
+      "evidence": "Found 9 internal link(s) with empty anchor text: '<a class=\"brand-8 track-class w-nav-brand\" href=\"/\" id=\"n...', '<a aria-label=\"Next Page\" class=\"w-pagination-next pagina...', '<a aria-label=\"Next Page\" class=\"w-pagination-next pagina...' (and 6 more).",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"categories-tab track-button w-inline-block w-tab-link w--...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/reviews",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"categories-tab track-button w-inline-block w-tab-link\" da...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "low",
+      "evidence": "Found 1 internal link(s) with empty anchor text: '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-1-3 track-button w-inline-block w-tab-link w...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-2-3 track-button w-inline-block w-tab-link\" ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_href",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "low",
+      "evidence": "Anchor element is missing an 'href' attribute: '<a class=\"tab-link-tab-3-2 track-button w-inline-block w-tab-link\" ...'.",
+      "suggested_fix": "Add a valid destination URL to the 'href' attribute or convert to a button element."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/tech-community",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "empty_anchor_text",
+      "page": "https://www.ccbp.in/terms-and-conditions",
+      "severity": "low",
+      "evidence": "Found 2 internal link(s) with empty anchor text: '<a class=\"brand-5-copy w-nav-brand\" href=\"/\"><div class=\"...', '<a class=\"footer-logo-link-2 track-button w-inline-block\"...'.",
+      "suggested_fix": "Provide descriptive anchor text or an 'aria-label' describing the destination page."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/terms-and-conditions",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description', 'og:image'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
+    },
+    {
+      "metric": "missing_open_graph",
+      "page": "https://www.ccbp.in/vision-and-values",
+      "severity": "low",
+      "evidence": "Missing essential Open Graph metadata tag(s) in <head>: 'og:description'.",
+      "suggested_fix": "Add Open Graph meta tags (og:title, og:description, og:image, og:url) to enhance social sharing previews."
     }
   ]
 }

@@ -49,7 +49,9 @@ class BM25Index:
 
         total_length = 0
         for chunk in self.chunks:
-            tokens = tokenize(chunk.text)
+            # Include section heading hierarchy so chunks inherit their semantic heading context
+            chunk_content = f"{' '.join(chunk.heading_hierarchy)} {chunk.text}" if chunk.heading_hierarchy else chunk.text
+            tokens = tokenize(chunk_content)
             length = len(tokens)
             self.doc_lengths.append(length)
             total_length += length

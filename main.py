@@ -158,7 +158,7 @@ def main() -> int:
         logging.info("Executing Q3 Grounded Website Question-Answering...")
 
         qa_agent = QAAgent()
-        response = qa_agent.answer_query(crawled_pages, args.query)
+        response = qa_agent.answer_query(crawled_pages, args.query, start_url=args.url)
         qa_agent.export_answer(response, output_path=args.answer_file)
 
         duration = time.time() - start_time

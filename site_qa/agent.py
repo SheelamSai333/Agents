@@ -40,12 +40,20 @@ class QAAgent:
         self,
         crawled_pages: List[ParsedPage],
         query: str,
+        start_url: Optional[str] = None,
     ) -> QAResponse:
         """
         Process crawled pages, search for query answer, extract verbatim excerpt,
         and verify against source page text.
         """
         logger.info("Processing user query: '%s' across %d crawled pages", query, len(crawled_pages))
+
+        if not start_url and crawled_pages:
+            start_page = next(
+                (p for p in crawled_pages if p.response and getattr(p.response, "depth", 1) == 0),
+                crawled_pages[0],
+            )
+            start_url = start_page.url
 
         # 1. Process query
         processed_query = QueryProcessor.process(query)
@@ -72,7 +80,7 @@ class QAAgent:
             min_score_threshold=self.min_score_threshold,
             min_term_coverage=self.min_term_coverage,
         )
-        result = searcher.get_best_supported_passage(processed_query)
+        result = searcher.get_best_supported_passage(processed_query, start_url=start_url)
 
         if not result:
             logger.info("Query is unsupported by crawled content. Returning null answer.")

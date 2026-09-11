@@ -55,6 +55,10 @@ def stem_word(w: str) -> str:
     w = w.lower()
     if len(w) <= 3:
         return w
+    if w.endswith("ions") and len(w) > 5:
+        w = w[:-1]
+    if w.endswith("ion") and len(w) > 4:
+        w = w[:-3]
     for suffix in ("ing", "ly", "ed", "es", "s"):
         if w.endswith(suffix) and len(w) - len(suffix) >= 3:
             return w[:-len(suffix)]
@@ -68,8 +72,10 @@ class ProcessedQuery:
     content_terms: List[str]
     phrases: List[str] = field(default_factory=list)
     has_substantive_terms: bool = True
-    intent: str = "GENERAL"  # DEFINITION, PRICE_COST, LOCATION, PROCEDURAL, GENERAL
+    intent: str = "GENERAL"  # DEFINITION, PRICE_COST, LOCATION, PROCEDURAL, LEADERSHIP_ABOUT, REQUIREMENTS, GENERAL
     target_subject: str = ""
+    is_context_dependent: bool = False
+    context_pronouns: List[str] = field(default_factory=list)
 
 
 class QueryProcessor:
@@ -82,6 +88,13 @@ class QueryProcessor:
 
         # Strip ending punctuation
         cleaned = re.sub(r"[?!.,;:]+$", "", cleaned).strip()
+
+        # Detect context-dependent pronouns referring to the website / subject entity
+        found_pronouns = [
+            p for p in ("this", "it", "here", "that", "these")
+            if re.search(rf"\b{p}\b", cleaned)
+        ]
+        is_context_dependent = len(found_pronouns) > 0
 
         # Classify intent & target subject
         intent = "GENERAL"
@@ -102,10 +115,15 @@ class QueryProcessor:
 
         elif re.match(r"^(how\s+much|what\s+(is\s+the\s+)?(price|pricing|cost))\b", cleaned):
             intent = "PRICE_COST"
-        elif re.match(r"^(where\s+(is|are|can\s+i\s+find)|what\s+is\s+the\s+(address|location))\b", cleaned):
+        elif re.match(r"^(where\s+(is|are|can\s+i\s+find)|what\s+is\s+the\s+(address|location))\b", cleaned) or \
+             re.search(r"\b(where\s+(?:is|are|can\s+i\s+find)\b|located|location|address|headquartered|headquarters)\b", cleaned):
             intent = "LOCATION"
         elif re.match(r"^(how\s+(can\s+i|do\s+i|to))\b", cleaned):
             intent = "PROCEDURAL"
+        elif re.search(r"\b(who\s+(?:runs?|founded|operates?|owns?|manages?)|founder|leadership|team)\b", cleaned):
+            intent = "LEADERSHIP_ABOUT"
+        elif re.search(r"\b(requirements?|eligibility|prerequisites?|qualifications?)\b", cleaned):
+            intent = "REQUIREMENTS"
 
         # Strip question prefix patterns for clean_query
         for pattern in QUESTION_PREFIX_PATTERNS:
@@ -143,4 +161,6 @@ class QueryProcessor:
             has_substantive_terms=len(content_terms) > 0,
             intent=intent,
             target_subject=target_subject,
+            is_context_dependent=is_context_dependent,
+            context_pronouns=found_pronouns,
         )

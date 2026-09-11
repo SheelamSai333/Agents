@@ -20,7 +20,7 @@ BOILERPLATE_CLASS_ID_KEYWORDS = {
     "site-header", "menu-drawer", "sidebar", "disclaimer", "popup", "modal"
 }
 DISCARD_TAGS = {"script", "style", "noscript", "svg", "canvas", "template"}
-CONTENT_TAGS = {"p", "li", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "dd", "dt", "td", "th"}
+CONTENT_TAGS = {"p", "li", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "dd", "dt", "td", "th", "address", "div"}
 
 
 class ContentExtractor:
@@ -75,7 +75,7 @@ class ContentExtractor:
                     child.name in CONTENT_TAGS
                     for child in element.find_all(CONTENT_TAGS, recursive=True)
                 )
-                if has_nested_content and tag_name not in {"p", "blockquote", "td", "th"}:
+                if has_nested_content and tag_name not in {"p", "blockquote", "td", "th", "address"}:
                     continue
 
                 text = self._clean_text(element.get_text(" ", strip=True))

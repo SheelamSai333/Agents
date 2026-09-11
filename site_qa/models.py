@@ -36,6 +36,8 @@ class ScoredPassage:
     url_match_count: int = 0
     has_explanatory_predicate: bool = False
     is_oblique_mention: bool = False
+    has_location_evidence: bool = False
+    is_disqualified: bool = False
 
 
 @dataclass

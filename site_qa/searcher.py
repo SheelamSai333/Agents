@@ -82,6 +82,82 @@ def check_explanatory_predicate(
     return has_explanation, is_oblique
 
 
+DISQUALIFIED_LEGAL_PATTERNS = [
+    r"\b(?:jurisdiction\s+of\s+(?:the\s+)?(?:competent\s+)?courts?)\b",
+    r"\bcourts?\s+located\s+in\b",
+    r"\bgoverned\s+by\s+(?:and\s+construed\s+in\s+accordance\s+with\s+)?(?:the\s+)?laws\s+of\b",
+    r"\bterms\s+shall\s+be\s+governed\b",
+    r"\bvenue\s+for\s+any\s+(?:dispute|action|claims?)\b",
+    r"\bdisputes?\s+arising\s+(?:out\s+of|under)\b",
+    r"\bsubject\s+to\s+(?:the\s+)?exclusive\s+jurisdiction\b",
+]
+
+LOCATION_HEADING_PATTERNS = [
+    r"\b(?:locations?|training\s+centers?|centers?|centres?|offices?|campuses?|campus|headquarters?|address(?:es)?|where\s+we\s+are|visit\s+us|contact\s+us|branches?|reach\s+us|find\s+us)\b",
+]
+
+LOCATION_TEXT_PATTERNS = [
+    r"\b(?:located\s+(?:at|in)|headquartered\s+in|based\s+in|headquarters\s+(?:is|are)\s+in|offices?\s+(?:in|located\s+in)|campus\s+in|centers?\s+in|centres?\s+in|branches?\s+in)\b",
+    r"\b(?:training\s+centers?\s+across|centers?\s+across|campuses?\s+across)\b",
+    r"\b(?:available\s+(?:online|offline)|online\s+or\s+(?:at\s+our\s+)?training\s+centers?|prefer\s+learning\s+from\s+home)\b",
+    r"\b(?:survey\s+no|plot\s+no|floor|building|block|street|road|st\.|ave\.|suite|bldg|nagar|circle|colony|sector|cross|main\s+road)\b",
+    r"\b(?:we\s+are\s+(?:a\s+)?(?:fully\s+)?remote|100%\s+online|conducted\s+online)\b",
+    r"\b(?:roast(?:s|ing)?|brew(?:s|ing)?|operate(?:s|ing)?|manufacture(?:s|ing)?|serve(?:s|ing)?)\s+(?:in|at)\s+[A-Z][a-z]+\b",
+]
+
+
+def check_location_evidence(
+    text: str,
+    headings: List[str],
+    page_url: str,
+    query: ProcessedQuery,
+) -> Tuple[bool, bool]:
+    """
+    Checks whether a passage contains genuine location/presence evidence,
+    or if it should be disqualified (e.g., legal dispute/court jurisdiction clause).
+    Returns (has_location_evidence, is_disqualified).
+    """
+    import re
+    from urllib.parse import urlparse
+
+    text_lower = text.lower()
+
+    # Check disqualification (e.g. legal jurisdiction clauses)
+    is_legal_query = any(
+        t in query.clean_query
+        for t in ("term", "terms", "condition", "court", "law", "jurisdiction", "dispute")
+    )
+    if not is_legal_query:
+        for p in DISQUALIFIED_LEGAL_PATTERNS:
+            if re.search(p, text_lower):
+                return False, True
+
+        url_path = urlparse(page_url).path.lower()
+        if any(k in url_path for k in ("terms", "privacy", "cookie", "disclaimer", "legal", "tos")):
+            return False, True
+
+    # Exclude pure opening hours or days of operation chunks from being location evidence
+    is_time_hours = bool(
+        re.search(r"^(?:(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed|thu|fri|sat|sun|\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[-–—to\s]+)+", text_lower)
+    )
+    if is_time_hours:
+        return False, False
+
+    has_heading = any(
+        re.search(p, h.lower())
+        for h in headings
+        for p in LOCATION_HEADING_PATTERNS
+    )
+
+    has_loc_text = any(re.search(p, text_lower) for p in LOCATION_TEXT_PATTERNS)
+    has_postal = bool(re.search(r"\b\d{5,6}\b", text))
+
+    if has_loc_text or has_postal or has_heading:
+        return True, False
+
+    return False, False
+
+
 class PassageSearcher:
     """Ranks passages and applies strict evidence-grounding thresholds."""
 
@@ -103,7 +179,11 @@ class PassageSearcher:
         self.url_boost = url_boost
         self.boilerplate_multiplier = boilerplate_multiplier
 
-    def search(self, query: ProcessedQuery) -> List[ScoredPassage]:
+    def search(
+        self,
+        query: ProcessedQuery,
+        start_url: Optional[str] = None,
+    ) -> List[ScoredPassage]:
         """Rank all chunks for the given processed query."""
         if not query.has_substantive_terms or self.index.doc_count == 0:
             return []
@@ -117,7 +197,7 @@ class PassageSearcher:
             search_terms = list(query.content_terms)
             for qt in query.content_terms:
                 st = stem_word(qt)
-                if st != qt:
+                if st != qt and st not in search_terms:
                     search_terms.append(st)
 
             base_score, matched_terms = self.index.score_chunk(idx, search_terms)
@@ -135,14 +215,19 @@ class PassageSearcher:
             heading_matches = 0
             for h in chunk.heading_hierarchy:
                 h_tokens = set(tokenize(h))
+                h_stems = {stem_word(t) for t in h_tokens}
                 for qt in query.content_terms:
-                    if qt in h_tokens or stem_word(qt) in h_tokens:
+                    st_qt = stem_word(qt)
+                    if qt in h_tokens or st_qt in h_tokens or st_qt in h_stems:
                         heading_matches += 1
                         unique_matches.add(qt)
 
             # Check URL slug overlap
             url_path = urlparse(chunk.page_url).path.lower()
-            url_matches = sum(1 for qt in query.content_terms if qt in url_path or stem_word(qt) in url_path)
+            url_matches = sum(
+                1 for qt in query.content_terms
+                if qt in url_path or stem_word(qt) in url_path
+            )
 
             # Check contiguous phrase matches
             has_phrase = False
@@ -151,13 +236,24 @@ class PassageSearcher:
                     has_phrase = True
                     break
 
-            # Explanatory predicate vs oblique mention detection
+            # Explanatory predicate vs oblique mention detection for DEFINITION
             has_explanation = False
             is_oblique = False
             if query.intent == "DEFINITION" and query.target_subject:
                 has_explanation, is_oblique = check_explanatory_predicate(
                     chunk.text, query.target_subject, query.content_terms, chunk.heading_hierarchy
                 )
+
+            # Location evidence verification for LOCATION
+            has_location = False
+            is_disqualified = False
+            if query.intent == "LOCATION":
+                has_location, is_disqualified = check_location_evidence(
+                    chunk.text, chunk.heading_hierarchy, chunk.page_url, query
+                )
+                if is_disqualified:
+                    # Disqualified passages receive zero score
+                    continue
 
             # Term coverage: fraction of substantive query terms present in chunk or its heading
             coverage = len(unique_matches) / total_query_terms if total_query_terms > 0 else 0.0
@@ -179,14 +275,49 @@ class PassageSearcher:
                     multiplier *= 2.0  # Strong boost for genuine definition/explanation
                 elif is_oblique:
                     multiplier *= 0.20  # Severe penalty for incidental oblique mentions
+            elif query.intent == "LOCATION":
+                if has_location:
+                    has_direct_address = any(re.search(p, chunk_text_lower) for p in LOCATION_TEXT_PATTERNS) or bool(re.search(r"\b\d{5,6}\b", chunk.text))
+                    is_pure_heading = chunk.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}
+                    if has_direct_address and not is_pure_heading:
+                        multiplier *= 4.0  # Highest priority for concrete address/location body content
+                    elif has_direct_address:
+                        multiplier *= 2.0
+                    else:
+                        multiplier *= 1.2
+                else:
+                    multiplier *= 0.20
 
-            # Crawl depth proximity weighting (prioritize start page at depth 0)
-            if chunk.crawl_depth == 0:
-                multiplier *= 1.30
-            elif chunk.crawl_depth == 1:
-                multiplier *= 1.05
-            elif chunk.crawl_depth >= 2:
-                multiplier *= 0.90
+            # Context-dependent query weighting
+            is_start_page = (chunk.crawl_depth == 0) or bool(start_url and chunk.page_url == start_url)
+            if query.is_context_dependent:
+                if is_start_page:
+                    multiplier *= 2.5  # Prioritize supplied page as primary context
+                else:
+                    # Check semantic relevance of other crawled pages
+                    is_semantically_relevant = False
+                    if query.intent == "LOCATION":
+                        is_semantically_relevant = any(
+                            k in url_path
+                            for k in ("contact", "about", "location", "center", "centre", "campus", "office", "address", "branch")
+                        )
+                    elif query.intent == "PRICE_COST":
+                        is_semantically_relevant = any(k in url_path for k in ("pricing", "price", "plans", "subscription", "cost"))
+
+                    if is_semantically_relevant:
+                        multiplier *= 1.5
+                    elif start_url and chunk.page_url.startswith(start_url.rstrip("/")):
+                        multiplier *= 1.2
+                    else:
+                        multiplier *= 0.50
+            else:
+                # Standard crawl depth proximity weighting
+                if chunk.crawl_depth == 0:
+                    multiplier *= 1.30
+                elif chunk.crawl_depth == 1:
+                    multiplier *= 1.05
+                elif chunk.crawl_depth >= 2:
+                    multiplier *= 0.90
 
             # Coverage multiplier: penalize passages that only match a tiny fraction of query terms
             if coverage < 1.0:
@@ -204,12 +335,14 @@ class PassageSearcher:
                     url_match_count=url_matches,
                     has_explanatory_predicate=has_explanation,
                     is_oblique_mention=is_oblique,
+                    has_location_evidence=has_location,
+                    is_disqualified=is_disqualified,
                 )
             )
 
         # Deterministic sorting:
         # 1. Score (descending)
-        # 2. Explanatory predicate (True before False)
+        # 2. Positive intent evidence first
         # 3. Non-boilerplate first
         # 4. Crawl depth (ascending - prefer start page)
         # 5. URL string (lexicographic)
@@ -217,7 +350,7 @@ class PassageSearcher:
         scored_passages.sort(
             key=lambda p: (
                 -round(p.score, 4),
-                0 if p.has_explanatory_predicate else 1,
+                0 if (p.has_explanatory_predicate or p.has_location_evidence) else 1,
                 1 if p.chunk.is_boilerplate else 0,
                 p.chunk.crawl_depth,
                 p.chunk.page_url,
@@ -228,13 +361,15 @@ class PassageSearcher:
         return scored_passages
 
     def get_best_supported_passage(
-        self, query: ProcessedQuery
+        self,
+        query: ProcessedQuery,
+        start_url: Optional[str] = None,
     ) -> Optional[Tuple[ScoredPassage, float]]:
         """
         Returns the top passage if and only if it strictly satisfies the
         grounding / confidence threshold. Returns None if unsupported.
         """
-        candidates = self.search(query)
+        candidates = self.search(query, start_url=start_url)
         if not candidates:
             return None
 
@@ -244,10 +379,13 @@ class PassageSearcher:
         coverage = matched_count / total_query_terms if total_query_terms > 0 else 0.0
 
         # Definitional intent gate:
-        # If user asks "What is X?", an incidental mention without an explanatory
-        # predicate cannot support the question.
         if query.intent == "DEFINITION":
             if not top.has_explanatory_predicate:
+                return None
+
+        # Location intent gate:
+        if query.intent == "LOCATION":
+            if top.is_disqualified or not top.has_location_evidence:
                 return None
 
         # Require at least one informative (non-ubiquitous) term to match
